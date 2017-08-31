@@ -1,0 +1,61 @@
+
+.header{
+    height:86px;padding:0 100px;margin:0 auto;border-bottom: 1px solid #ddd;
+    img{float:left;padding-top: 15px;}
+    p{padding-top: 55px;}
+}
+
+.container{padding:60px;padding-bottom:40px;}
+.main{
+    border:10px solid #D1D1D1;box-sizing: border-box;background-color: #FAFAFA;
+    .main_l{
+        width:620px;
+        p{height:58px;margin:0 15px;padding-left:108px;color:#A59999;line-height:58px;border-bottom:1px solid #E6E6E6;font-size:20px;}
+        div{
+            margin-left:120px;display:block;border:1px solid #ccc;height:52px;line-height:52px;
+            span{padding:0 20px;}
+        }
+        div:first-of-type{
+            width:400px;margin-top:50px;
+            input{border:0 none;height:50px;}
+        }
+        div:nth-of-type(2){
+            width:278px;border-top:0 none;
+            input{border:0 none;height:50px;}
+        }
+        div:nth-of-type(3){
+            border:0 none;
+            span{padding:0 10px;font-size:14px;}
+        }
+        button{margin-left:120px;width:400px;height:52px;border:0 none;border-radius:5px;background-color:#FF500B;color:#fff;font-weight:bold;}
+    }
+    .main_r{
+        width:240px;height:500px;margin:20px 0;border-left:1px solid #E6E6E6;box-sizing:border-box;
+        p{padding-left:20px;height:20px;padding-top:20px;line-height:20px;}
+        ul{
+            padding-left:60px;padding-top:20px;font-size:14px;
+            li{height:38px;}
+        }
+    }
+}
+
+.footer{
+    height:210px;background-color:#343A3A;font-size:12px;color:#fff;
+    .container{
+        padding:40px 0 0 0;
+        p{
+            text-align:center;padding-bottom:20px;
+            a{
+                padding:0 13px;border-right:1px solid #fff;color:#fff;
+            }
+            a:last-of-type{border:0 none;}
+        }
+        p:nth-of-type(2) span{padding:0 13px;}
+        p:nth-of-type(3) span{padding:0 30px;}
+        div{
+            text-align:center;
+            img{display:inline-block;width:108px;border:1px solid #F9821E;margin-right:20px;}
+        }
+    }
+    
+}
