@@ -1,0 +1,70 @@
+.header{
+    height:38px;width:100%;border-bottom:1px solid #ccc;font-size:14px;
+    .container{
+        width:1080px;margin:0 auto;
+        >ul{
+            float:right;
+            >li{
+                float:left;position:relative;
+                img{display:inline-block;}
+                a{
+                    line-height:38px;color:#777;
+                    span{padding:0 10px;border-left:1px solid #d5d5d5;}
+                }
+                >ul{
+                    position:absolute;bottom:-60px;left:10px;display:none;border:1px solid #ccc;border-top:0 none;
+                    >li a{height:20px;display:block;width:70px;line-height:20px;padding:0 5px;}
+                }
+            }
+            >li:nth-of-type(3){
+                ul{bottom:-40px;}
+            }
+        } 
+    }
+}
+.search{
+    height:108px;
+    .container{
+        width:1080px;margin:0 auto;
+        .sl{width:240px;height:68px;margin:22px 50px auto 0;}
+        .sm{
+            width:500px;margin-top:24px;font-size:12px;
+            .sm_top{
+                span{float:left;height:32px;width:62px;line-height:32px;text-align:center;border:2px solid #F15C18;border-right:1px solid #CECECE;}
+                input{float:left;width:332px;height:32px;border:2px solid #F15C18;border-left:0 none;padding-left:10px;}
+                button{float:left;width:90px;height:36px;background-color:#F15C18;border:0 none;}
+            }
+            .sm_b{
+                margin-top:10px;
+                a{
+                    color:#999999;
+                    span{padding:0 5px;border-right:1px solid #999999;}
+                }
+                a:last-of-type span{border:0 none;}  
+            }
+        }
+        .sr span{display:inline-block;width:114px;height:36px;border:1px solid #F0F0F0;line-height:36px;text-align:center;margin-top:24px;font-size:14px;}
+    }
+}
+
+.nav{
+    height:36px;width:100%;border-bottom:1px solid #F15C18;font-size:14px;
+    .container{
+        width:1080px;margin:0 auto;
+        >a:first-of-type{
+            display:inline-block;width:152px;height:36px;line-height:36px;background-color:#F15C18;text-align:center;color:#fff;font-weight:bold;position:relative;
+            ul{
+                position:absolute;bottom:0;left:0;width:152px;
+            }
+
+        }
+        >a:first-of-type:hover{color:#fff;}
+        >a:nth-of-type(2){color:#FF6D51;}
+        >a{
+            color:#333333;
+            span{padding:0 15px;}
+        }
+        >a:hover{color:#FF6D02;}
+
+    }
+}

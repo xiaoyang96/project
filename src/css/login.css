@@ -1,0 +1,205 @@
+.header {
+  height: 86px;
+  padding: 0 100px;
+  margin: 0 auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.header a img {
+  float: left;
+  padding-top: 15px;
+}
+
+.header .header_r {
+  padding-top: 40px;
+  font-size: 14px;
+  color: #AAAAAA;
+}
+
+.header .header_r img {
+  float: left;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.header .header_r p a:hover {
+  color: #e85D22;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.container .main {
+  height: 560px;
+}
+
+.container .main .fl img {
+  padding-top: 50px;
+}
+
+.container .main .fr {
+  width: 400px;
+  height: 404px;
+  padding: 19px 19px 29px 29px;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  background-color: #fff;
+  margin-top: 20px;
+}
+
+.container .main .fr .tab {
+  color: #aaa;
+}
+
+.container .main .fr .tab ul li {
+  float: left;
+  width: 200px;
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
+  padding-bottom: 13px;
+  font-size: 18px;
+}
+
+.container .main .fr .tab .c1 {
+  padding: 20px 40px 0 40px;
+  display: none;
+}
+
+.container .main .fr .tab .c1 div {
+  border: 1px solid #ccc;
+  height: 52px;
+  line-height: 52px;
+  font-size: 14px;
+}
+
+.container .main .fr .tab .c1 div span {
+  padding: 0 20px;
+}
+
+.container .main .fr .tab .c1 div input {
+  border: 0 none;
+}
+
+.container .main .fr .tab .c1 div:nth-of-type(1) {
+  border-bottom: none;
+}
+
+.container .main .fr .tab .c1 div:nth-of-type(3) {
+  width: 220px;
+  border-top: none;
+}
+
+.container .main .fr .tab .c1 div:nth-of-type(3) input {
+  width: 100px;
+}
+
+.container .main .fr .tab .c1 div:nth-of-type(4) {
+  border: none;
+  font-size: 14px;
+  position: relative;
+}
+
+.container .main .fr .tab .c1 div:nth-of-type(4) span {
+  padding: 0;
+}
+
+.container .main .fr .tab .c1 div:nth-of-type(4) a {
+  position: absolute;
+  right: 0;
+}
+
+.container .main .fr .tab .c1 button {
+  width: 320px;
+  height: 42px;
+  background-color: #FF500B;
+  color: #fff;
+  font-weight: bold;
+  border: 0 none;
+  border-radius: 5px;
+}
+
+.container .main .fr .tab .c1 p {
+  font-size: 12px;
+  height: 25px;
+  line-height: 25px;
+  padding-top: 15px;
+  padding-left: 8px;
+  font-weight: bold;
+}
+
+.container .main .fr .tab .c1 p:last-of-type {
+  font-weight: normal;
+  padding: 0 0 0 40px;
+}
+
+.container .main .fr .tab .c2 {
+  padding: 20px 40px 0 40px;
+}
+
+.container .main .fr .tab .c2 div {
+  border: 1px solid #ccc;
+  height: 52px;
+  line-height: 52px;
+  font-size: 14px;
+}
+
+.container .main .fr .tab .c2 div span {
+  padding: 0 20px;
+}
+
+.container .main .fr .tab .c2 div input {
+  border: 0 none;
+}
+
+.container .main .fr .tab .c2 div:nth-of-type(1) input {
+  width: 200px;
+}
+
+.container .main .fr .tab .c2 div:nth-of-type(2) {
+  width: 220px;
+  border-top: none;
+}
+
+.container .main .fr .tab .c2 div:nth-of-type(2) input {
+  width: 100px;
+}
+
+.container .main .fr .tab .c2 p:nth-of-type(1) {
+  font-size: 12px;
+  padding: 10px 0;
+}
+
+.container .main .fr .tab .c2 p:nth-of-type(1) span {
+  background-color: #21b384;
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+}
+
+.container .main .fr .tab .c2 button {
+  width: 320px;
+  height: 42px;
+  background-color: #FF500B;
+  color: #fff;
+  font-weight: bold;
+  border: 0 none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.container .main .fr .tab .c2 p:nth-of-type(2), .container .main .fr .tab .c2 p:nth-of-type(3) {
+  font-size: 12px;
+  height: 25px;
+  line-height: 25px;
+  padding-top: 15px;
+  padding-left: 8px;
+  font-weight: bold;
+}
+
+.container .main .fr .tab .c2 p:last-of-type {
+  font-weight: normal;
+  padding: 0 0 0 40px;
+}

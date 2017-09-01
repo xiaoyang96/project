@@ -3,6 +3,7 @@
   padding: 0 100px;
   margin: 0 auto;
   border-bottom: 1px solid #ddd;
+  font-size: 14px;
 }
 
 .header img {
@@ -14,7 +15,13 @@
   padding-top: 55px;
 }
 
+.header p a:hover {
+  color: #E85D22;
+}
+
 .container {
+  width: 890px;
+  margin: 0 auto;
   padding: 60px;
   padding-bottom: 40px;
 }
@@ -23,6 +30,7 @@
   border: 10px solid #D1D1D1;
   box-sizing: border-box;
   background-color: #FAFAFA;
+  color: #aaa;
 }
 
 .main .main_l {
@@ -41,7 +49,6 @@
 
 .main .main_l div {
   margin-left: 120px;
-  display: block;
   border: 1px solid #ccc;
   height: 52px;
   line-height: 52px;
@@ -49,6 +56,7 @@
 
 .main .main_l div span {
   padding: 0 20px;
+  color: #666;
 }
 
 .main .main_l div:first-of-type {
@@ -104,6 +112,7 @@
   height: 20px;
   padding-top: 20px;
   line-height: 20px;
+  color: #333;
 }
 
 .main .main_r ul {
@@ -114,49 +123,4 @@
 
 .main .main_r ul li {
   height: 38px;
-}
-
-.footer {
-  height: 210px;
-  background-color: #343A3A;
-  font-size: 12px;
-  color: #fff;
-}
-
-.footer .container {
-  padding: 40px 0 0 0;
-}
-
-.footer .container p {
-  text-align: center;
-  padding-bottom: 20px;
-}
-
-.footer .container p a {
-  padding: 0 13px;
-  border-right: 1px solid #fff;
-  color: #fff;
-}
-
-.footer .container p a:last-of-type {
-  border: 0 none;
-}
-
-.footer .container p:nth-of-type(2) span {
-  padding: 0 13px;
-}
-
-.footer .container p:nth-of-type(3) span {
-  padding: 0 30px;
-}
-
-.footer .container div {
-  text-align: center;
-}
-
-.footer .container div img {
-  display: inline-block;
-  width: 108px;
-  border: 1px solid #F9821E;
-  margin-right: 20px;
 }
