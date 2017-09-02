@@ -13,6 +13,7 @@
 
 .header p {
   padding-top: 55px;
+  margin-right: 220px;
 }
 
 .header p a:hover {
@@ -116,9 +117,13 @@
 }
 
 .main .main_r ul {
-  padding-left: 60px;
+  padding-left: 30px;
   padding-top: 20px;
   font-size: 14px;
+}
+
+.main .main_r ul i {
+  font-size: 20px;
 }
 
 .main .main_r ul li {

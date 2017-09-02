@@ -3,7 +3,7 @@
     height:86px;padding:0 100px;margin:0 auto;border-bottom: 1px solid #ddd;font-size:14px;
     img{float:left;padding-top: 15px;}
     p{
-        padding-top: 55px;
+        padding-top: 55px;margin-right:220px;
         a:hover{color:#E85D22;}
     }
 }
@@ -36,7 +36,8 @@
         width:240px;height:500px;margin:20px 0;border-left:1px solid #E6E6E6;box-sizing:border-box;
         p{padding-left:20px;height:20px;padding-top:20px;line-height:20px;color:#333;}
         ul{
-            padding-left:60px;padding-top:20px;font-size:14px;
+            padding-left:30px;padding-top:20px;font-size:14px;
+            i{font-size:20px;font-weight:bold;}
             li{height:38px;}
         }
     }
