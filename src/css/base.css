@@ -230,6 +230,7 @@ a {
   background: #343A3A;
   font-size: 12px;
   width: 162px;
+  z-index: 1000;
 }
 
 .nav .container h4 ul li {
