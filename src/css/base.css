@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body, div, img, h1, h2, h3, h4, h5, h6, p, dl, dd, ul, li, ol, form, input, textarea, th, td {
   padding: 0;
   margin: 0;
@@ -231,6 +232,7 @@ a {
   font-size: 12px;
   width: 162px;
   z-index: 1000;
+  display: none;
 }
 
 .nav .container h4 ul li {
@@ -300,6 +302,10 @@ a {
   margin-bottom: 10px;
 }
 
+.nav .container h4:hover ul {
+  display: block;
+}
+
 .nav .container > ul {
   height: 36px;
   line-height: 36px;
@@ -324,6 +330,95 @@ a {
 
 .nav .container > ul li:first-of-type a {
   color: #FF6D02;
+}
+
+.pic {
+  height: 86px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-right: 0 none;
+}
+
+.pic .container {
+  width: 1210px;
+  margin: 0 auto;
+}
+
+.pic .container ul {
+  padding: 0 105px;
+}
+
+.pic .container ul li {
+  float: left;
+}
+
+.faq {
+  background: #fff;
+}
+
+.faq .container {
+  width: 1210px;
+  margin: 0 auto;
+}
+
+.faq .container .notice {
+  height: 134px;
+  width: 300px;
+  margin: 20px 0 25px 4%;
+  border-right: 1px solid #ccc;
+}
+
+.faq .container .notice h3 {
+  color: #666;
+  padding: 5px 5px 5px 5px;
+  margin: 0px 0 5px;
+  font-size: 16px;
+}
+
+.faq .container .notice ul {
+  font-size: 12px;
+  text-overflow: ellipsis;
+}
+
+.faq .container .notice ul li {
+  width: 250px;
+  height: 24px;
+  line-height: 24px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.faq .container .notice ul a {
+  color: #999999;
+}
+
+.faq .container .link {
+  font-family: "宋体";
+  padding: 20px 0%;
+  margin-left: 50px;
+  font-size: 12px;
+}
+
+.faq .container .link ul li {
+  float: left;
+  width: 162px;
+  height: 136px;
+}
+
+.faq .container .link ul li dl dt {
+  font-size: 16px;
+  color: #666;
+  padding: 5px;
+  margin: 5px 0;
+}
+
+.faq .container .link ul li dl dd {
+  padding: 4px 5px;
+}
+
+.faq .container .link ul li dl dd a {
+  color: #999;
 }
 
 .footer {

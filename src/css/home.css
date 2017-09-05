@@ -1,45 +1,56 @@
+.nav .container h4 ul {
+  display: block;
+}
+
 .tv {
   height: 78px;
   width: 1210px;
   margin: 0 auto;
+  padding-left: 200px;
+  box-sizing: border-box;
 }
 
-.banner {
+.tv > img {
+  float: left;
+  padding: 5px;
+}
+
+.ban {
   background: #E0CCB1;
   padding-left: 182px;
 }
 
-.banner .ban_l {
+.ban .ban_l {
   width: 784px;
   height: 400px;
 }
 
-.banner .ban_r {
+.ban .ban_r {
   width: 260px;
   height: 400px;
   padding: 0 34px;
   box-sizing: border-box;
 }
 
-.banner .ban_r p {
+.ban .ban_r p {
   text-align: center;
 }
 
-.banner .ban_r p:nth-of-type(1) {
+.ban .ban_r p:nth-of-type(1) {
   font-size: 18px;
   height: 60px;
   line-height: 60px;
   font-weight: bold;
 }
 
-.banner .ban_r p:nth-of-type(2) {
+.ban .ban_r p:nth-of-type(2) {
   font-size: 12px;
   padding-top: 5px;
   padding-bottom: 10px;
   font-weight: bold;
 }
 
-.banner .ban_r p:nth-of-type(3) {
+.ban .ban_r p:nth-of-type(3) {
   font-size: 12px;
 }
 
@@ -140,29 +151,52 @@
   opacity: 0.5;
 }
 
+.container .F1 .mt, .container .F2 .mt, .container .F3 .mt, .container .F4 .mt, .container .F5 .mt {
+  display: block;
+  height: 35px;
+  border-bottom: 2px solid #FE5621;
+  position: relative;
+}
+
 .container .F1 .mt .fl i, .container .F2 .mt .fl i, .container .F3 .mt .fl i, .container .F4 .mt .fl i, .container .F5 .mt .fl i {
   font-size: 24px;
   color: #FEAA90;
-  line-height: 40px;
+  line-height: 34px;
 }
 
 .container .F1 .mt .fl h4, .container .F2 .mt .fl h4, .container .F3 .mt .fl h4, .container .F4 .mt .fl h4, .container .F5 .mt .fl h4 {
   display: inline-block;
-  height: 40px;
-  line-height: 40px;
+  height: 34px;
+  line-height: 34px;
   font-size: 24px;
   font-weight: normal;
 }
 
 .container .F1 .mt header, .container .F2 .mt header, .container .F3 .mt header, .container .F4 .mt header, .container .F5 .mt header {
-  height: 40px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 34px;
+  line-height: 34px;
+  z-index: 1;
+  background: #fff;
 }
 
 .container .F1 .mt header span, .container .F2 .mt header span, .container .F3 .mt header span, .container .F4 .mt header span, .container .F5 .mt header span {
   display: inline-block;
-  height: 40px;
-  line-height: 40px;
+  height: 34px;
+  line-height: 34px;
   padding: 0 8px;
+}
+
+.container .F1 .mt header .active, .container .F2 .mt header .active, .container .F3 .mt header .active, .container .F4 .mt header .active, .container .F5 .mt header .active {
+  border-left: 1px solid #FE5621;
+  border-right: 1px solid #FE5621;
+  border-top: 3px solid #FE5621;
+  height: 33px;
+  line-height: 30px;
+  border-bottom: 0 none;
+  margin-bottom: -1px;
 }
 
 .container .F1 .mc .side, .container .F2 .mc .side, .container .F3 .mc .side, .container .F4 .mc .side, .container .F5 .mc .side {
@@ -222,10 +256,6 @@
   margin-right: 8.5px;
 }
 
-.container .F1 .mc .content, .container .F2 .mc .content, .container .F3 .mc .content, .container .F4 .mc .content, .container .F5 .mc .content {
-  height: 474px;
-}
-
 .container .F1 .mc .content .con_l, .container .F2 .mc .content .con_l, .container .F3 .mc .content .con_l, .container .F4 .mc .content .con_l, .container .F5 .mc .content .con_l {
   width: 219px;
   height: 474px;
@@ -273,4 +303,71 @@
 
 .container .F2 .mc .side .side_b {
   background: #E1F5FC;
+}
+
+.container .huiyuan {
+  height: 346px;
+  border: 1px solid #F15E1B;
+  border-top: 3px solid #F15E1B;
+  margin-bottom: 20px;
+}
+
+.container .huiyuan .vip_t {
+  height: 49px;
+  line-height: 49px;
+  border-bottom: 1px solid #ddd;
+}
+
+.container .huiyuan .vip_t div {
+  margin-left: 20px;
+  font-size: 20px;
+  color: #F15C18;
+}
+
+.container .huiyuan .vip_t div i {
+  font-size: 20px;
+  color: #F15C18;
+}
+
+.container .huiyuan .vip_t > ul > li {
+  float: left;
+  width: 95px;
+  margin-right: 40px;
+}
+
+.container .huiyuan .vip_t > ul > li a {
+  color: #F15C18;
+}
+
+.container .huiyuan .vip_t > ul > li i {
+  font-size: 20px;
+  color: #F15C18;
+}
+
+.container .huiyuan .vip_b {
+  padding: 0 22px;
+  background: #fff;
+}
+
+.container .huiyuan .vip_b ul li {
+  float: left;
+  height: 270px;
+  width: 206px;
+  border-right: 1px solid #ddd;
+  padding: 13px;
+}
+
+.container .huiyuan .vip_b ul li img {
+  width: 206px;
+  height: 206px;
+}
+
+.container .huiyuan .vip_b ul li p {
+  font-size: 12px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.container .huiyuan .vip_b ul li:last-of-type {
+  border: 0 none;
 }

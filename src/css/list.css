@@ -1,0 +1,86 @@
+.container {
+  width: 1210px;
+  margin: 0 auto;
+}
+
+.container .fenlei {
+  padding: 10px 0;
+  z-index: 99999;
+}
+
+.container .fenlei span {
+  position: relative;
+}
+
+.container .fenlei span > a {
+  color: #555555;
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+  width: 86px;
+  border: 1px solid #ccc;
+  margin: 3px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.container .fenlei span ul {
+  position: absolute;
+  top: 18px;
+  left: 0;
+  display: none;
+  background: #fff;
+  font-size: 12px;
+  width: 400px;
+  padding: 10px 0;
+  padding-left: 3px;
+  border: 1px solid red;
+  margin: 3px;
+}
+
+.container .fenlei span ul li {
+  float: left;
+  width: 60px;
+  height: 24px;
+  line-height: 24px;
+  padding: 0 10px;
+}
+
+.container .fenlei span ul li a {
+  color: #555;
+}
+
+.container .fenlei span:hover > a {
+  border: 1px solid red;
+  border-bottom: 0 none;
+}
+
+.container .fenlei span:hover ul {
+  display: block;
+}
+
+.container .select {
+  font-size: 12px;
+}
+
+.container .select .select_top {
+  height: 36px;
+  line-height: 36px;
+  background: #F2F2F2;
+  padding-left: 10px;
+  border: 1px solid #E6E6E6;
+}
+
+.container .select .select_bot {
+  border: 1px solid #E6E6E6;
+  border-top: 0 none;
+}
+
+.container .select .select_bot span {
+  display: inline-block;
+  width: 80px;
+  height: 34px;
+  border-right: 1px solid #ccc;
+  line-height: 34px;
+  text-align: center;
+}

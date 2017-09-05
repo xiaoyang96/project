@@ -6,14 +6,16 @@
     <link rel="stylesheet" type="text/css" href="css/base.css" />
     <link rel="stylesheet" type="text/css" href="css/home.css" />
     <link rel="stylesheet" type="text/css" href="font/font_2tc6l6ui9xdpldi/iconfont.css" />
-    <script type="text/javascript" src="./js/common.js"></script>
+    <!-- <script type="text/javascript" src="./js/common.js"></script> -->
     <script type="text/javascript" src="./js/banner.js"></script>
     <script type="text/javascript" src="js/require.js" data-main="./js/home"></script>
     <script type="text/javascript">
         document.addEventListener('DOMContentLoaded',function(){
-            new Banner({img:['img/7f0bbf2365d88475850cb79d5e629e14.jpg','img/a32f41ea68b741a64d0a381de206aa32.jpg','img/f4cda5d59dc442c3d07f34c5de60dda8.jpg','img/577039b19bbf749495421a7f181712ca.jpg','img/bd5cbacacf95be3b32bfec5d0c44e970.jpg'],ele:'.banner .ban_l',gap:3000}).init();
-            new Banner({img:['img/3431084cdf9406883b9bc0c17fb0d8c0.jpg','img/24baa8709ecfdd552093f05d4ff56acb.jpg','img/be00ce4510d19f37fee2424f2e93db07.jpg','img/67c93d4185f27cc853cfc0215a408a0c.jpg','img/bc13ca14e8ac019819cfacc21eb07602.jpg'],ele:'.con_ban .con_ban_top',gap:3000,btnchange:true}).init();
-            new Banner({img:['img/f375b0603ca5d4098d279c76157a3537.jpg','img/aae7b181811216fb3b4d6e36fdb5919c.jpg','img/4fcb712dfb1c40718c9d01f07c4f256c.jpg','img/377fe28b6819e4bafac6debdc1b04735.jpg','img/e94ed3d0113c93e89b33330d6177ae51.jpg'],ele:'.con_ban .con_ban_bottom',gap:3000,btnchange:false}).init();
+            new Banner({img:['img/7f0bbf2365d88475850cb79d5e629e14.jpg','img/a32f41ea68b741a64d0a381de206aa32.jpg','img/f4cda5d59dc442c3d07f34c5de60dda8.jpg','img/577039b19bbf749495421a7f181712ca.jpg','img/bd5cbacacf95be3b32bfec5d0c44e970.jpg'],ele:'.ban .ban_l',gap:3000}).init();
+            new Banner({img:['img/3431084cdf9406883b9bc0c17fb0d8c0.jpg','img/24baa8709ecfdd552093f05d4ff56acb.jpg','img/be00ce4510d19f37fee2424f2e93db07.jpg','img/67c93d4185f27cc853cfc0215a408a0c.jpg','img/bc13ca14e8ac019819cfacc21eb07602.jpg'],ele:'.con_ban .con_ban_top1',gap:3000,btnchange:false}).init();
+            new Banner({img:['img/f375b0603ca5d4098d279c76157a3537.jpg','img/aae7b181811216fb3b4d6e36fdb5919c.jpg','img/4fcb712dfb1c40718c9d01f07c4f256c.jpg','img/377fe28b6819e4bafac6debdc1b04735.jpg','img/e94ed3d0113c93e89b33330d6177ae51.jpg'],ele:'.con_ban .con_ban_bottom1',gap:3000}).init();
+            new Banner({img:['img/5bb1ae07e932c3bb31a7c2cff2f4ae97.jpg','img/5263319b0c5ddc9e53c9cd091dbebd92.jpg','img/2ea4fb6f1068d48a09ca3781d20ae3b9.jpg','img/579b6e7bbf98935ead8a5b74641f7966.jpg','img/c3b71bf13275105841784461d0a2b3e7.jpg'],ele:'.con_ban .con_ban_top2',gap:3000,btnchange:false}).init();
+            new Banner({img:['img/e7f7e6f3ad6bc4343a5ffadc61b2331f.jpg','img/0e3e8ef204212a72c5ce20c8f9d395fd.jpg','img/b75c7c8052505fcdfc692b77199e19a3.jpg','img/9acc3ee17426cd0fd0eb9dd4cbbe49df.jpg','img/ccfa38b828d17bf2bc2419c7a139ef9c.jpg'],ele:'.con_ban .con_ban_bottom2',gap:3000}).init();
         })
     </script>
 </head>
@@ -176,15 +178,26 @@
         </div>
     </div>
     
-    <div class="tv">
-        <div class="tv clear">
-            <img class="fr" src="img/666a01d87a14df2cf255b1b30aa6963d.gif"/>
+    <div class="tv clear">
+        <img src="img/tv1.png" height="68" width="406" alt="" />
+        <img src="img/tv2.png" height="68" width="406" alt="" />
+        <div class="fl clear">
+            <img src="img/666a01d87a14df2cf255b1b30aa6963d.gif"/>
         </div>
 
     </div>    
-    <div class="banner clear">
-        <div class="ban_l fl">
-            <img class="banner_img" src="img/7f0bbf2365d88475850cb79d5e629e14.jpg"/>       
+    <div class="ban clear">
+        <div class="banner ban_l fl" id="b04">
+            <!-- <ul>
+                <li><img src="img/7f0bbf2365d88475850cb79d5e629e14.jpg" alt="" /></li>
+                <li><img src="img/a32f41ea68b741a64d0a381de206aa32.jpg" alt="" /></li>
+                <li><img src="img/f4cda5d59dc442c3d07f34c5de60dda8.jpg" alt="" /></li>
+                <li><img src="img/577039b19bbf749495421a7f181712ca.jpg" alt="" /></li>
+                <li><img src="img/bd5cbacacf95be3b32bfec5d0c44e970.jpg" alt="" /></li>
+            </ul>
+            <a href="javascript:void(0);" class="unslider-arrow04 prev"><img class="arrow" id="al" src="lib/unslider-150203225543/arrowl.png" alt="prev" width="20" height="35"></a>
+            <a href="javascript:void(0);" class="unslider-arrow04 next"><img class="arrow" id="ar" src="lib/unslider-150203225543/arrowr.png" alt="next" width="20" height="37"></a> -->
+            <!-- <img class="banner_img" src="img/7f0bbf2365d88475850cb79d5e629e14.jpg"/>        -->
         </div>
         <div class="ban_r fl">
             <p>今日最大牌</p>
@@ -284,12 +297,12 @@
                 </div>
             </div>
             <div class="F1">
-                <div class="mt clear">
+                <div class="mt mt1 clear">
                     <div class="fl">
                         <i class="iconfont icon-1lou"></i>
                         <h4>食品酒水</h4>
                     </div>
-                    <header class="fr">
+                    <header>
                         <span>热门推荐</span>
                         <span>食品饮料</span>
                         <span>热销名酒</span>
@@ -297,7 +310,7 @@
                         <span>茶叶香茗</span>
                     </header>
                 </div>
-                <div class="mc clear">
+                <div class="mc mc1 clear">
                     <div class="side fl">
                         <img src="img/aa92aff575edec7c9ac5b560f8db41e4.jpg" height="474" width="210" alt="" />
                         <div class="side_c">
@@ -340,10 +353,10 @@
                             <a href="#"><img src="img/55cce60f677ca39999e4f0adccdb0770.jpg" height="236" width="219" alt="" /></a>
                         </div>
                         <div class="con_ban fl">
-                            <div class="con_ban_top">
+                            <div class="con_ban_top1">
                                 <img src="img/3431084cdf9406883b9bc0c17fb0d8c0.jpg" height="236" width="339" alt="" />
                             </div>
-                            <div class="con_ban_bottom">
+                            <div class="con_ban_bottom1">
                                 <img src="img/f375b0603ca5d4098d279c76157a3537.jpg" height="236" width="339" alt="" />
                             </div>
                         </div>
@@ -355,6 +368,18 @@
                             <a href="#"><img src="img/f561b93d1f31b38eeaabb0e8cafba72b.jpg" alt="" /></a>
                             <a href="#"><img src="img/1b435e98be7fdabf747a87fca946fa10.jpg" height="236" width="219" alt="" /></a>
                         </div>
+                    </div>
+                    <div class="content fl clear">
+                        <img src="img/yilou2.png" height="474" width="999" alt="" />
+                    </div>
+                    <div class="content fl clear">
+                        <img src="img/yilou3.png" height="474" width="999" alt="" />
+                    </div>
+                    <div class="content fl clear">
+                        <img src="img/yilou4.png" height="474" width="999" alt="" />
+                    </div>
+                    <div class="content fl clear">
+                        <img src="img/yilou5.png" height="474" width="999" alt="" />
                     </div>
                     
                 </div>
@@ -373,8 +398,9 @@
                     </ul>
                 </div>
             </div>
+
             <div class="F2">
-                <div class="mt clear">
+                <div class="mt mt2 clear">
                     <div class="fl">
                         <i class="iconfont icon-2lou"></i>
                         <h4>家居家电</h4>
@@ -386,7 +412,7 @@
                         <span>家居家装</span>
                     </header>
                 </div>
-                <div class="mc clear">
+                <div class="mc mc2 clear">
                     <div class="side fl">
                         <img src="img/3f5fa68e71590d09da4a66ed573d0d16.jpg" height="474" width="210" alt="" />
                         <div class="side_c">
@@ -428,11 +454,11 @@
                             <a href="#"><img src="img/42efcda77146ece0b30f4dbe4448782a.jpg" height="236" width="219" alt="" /></a>
                         </div>
                         <div class="con_ban fl">
-                            <div class="con_ban_top">
-                                <img src="img/3431084cdf9406883b9bc0c17fb0d8c0.jpg" height="236" width="339" alt="" />
+                            <div class="con_ban_top2">
+                                <img src="img/5bb1ae07e932c3bb31a7c2cff2f4ae97.jpg" height="236" width="339" alt="" />
                             </div>
-                            <div class="con_ban_bottom">
-                                <img src="img/f375b0603ca5d4098d279c76157a3537.jpg" height="236" width="339" alt="" />
+                            <div class="con_ban_bottom2">
+                                <img src="img/e7f7e6f3ad6bc4343a5ffadc61b2331f.jpg" height="236" width="339" alt="" />
                             </div>
                         </div>
                         <div class="con_r fl">
@@ -444,38 +470,46 @@
                             <a href="#"><img src="img/0361ed8abf9f9a3210b4642495b67fc9.jpg" height="236" width="219" alt="" /></a>
                         </div>
                     </div>
+                    <div class="content fl clear">
+                        <img src="img/erlou2.png" height="474" width="999" alt="" />
+                    </div>
+                    <div class="content fl clear">
+                        <img src="img/erlou3.png" height="474" width="999" alt="" />
+                    </div>
+                    <div class="content fl clear">
+                        <img src="img/erlou4.png" height="474" width="999" alt="" />
+                    </div>
                 </div>
                 <div class="floor1 clear">
                     <ul class="clear">
-                        <li><a href="#"><img src="img/81a0cccd59f59630b1f67c1cd9605930.jpg" alt="" height="50" width="150" /></a></li>
-                        <li><a href="#"><img src="img/3fee2e9820ed4d4a5abb4a633d3b416d.jpg" height="50" width="150" alt="" /></a></li>
-                        <li><a href="#"><img src="img/7ca9b415167162fe4f9e8c8656d48321.jpg" height="208" width="625" alt="" /></a></li>
-                        <li><a href="#"><img src="img/1e46f0ef0e886fc1aa7a446616e4c98a.jpg" height="88" width="225" alt="" /></a></li>
-                        <li><a href="#"><img src="img/9e10cb9d376d0b43c49b5fedbaf11a60.jpg" height="50" width="150" alt="" /></a></li>
-                        <li><a href="#"><img src="img/63f6ced52728603290cf5bcb2cd3b1d9.jpg" height="50" width="150" alt="" /></a></li>
-                        <li><a href="#"><img src="img/628f50108f4c52a0285fffa8aa6ad083.jpg" height="50" width="150" alt="" /></a></li>
-                        <li><a href="#"><img src="img/579ad51f01040411ad73c75df7150195.jpg" height="50" width="150" alt="" /></a></li>
-                        <li><a href="#"><img src="img/032f9ed1c33ade9f38a5963989485ef7.jpg" height="50" width="150" alt="" /></a></li>
-                        <li><a href="#"><img src="img/2756aec3ac2bf67832954ee58aa81cde.jpg" height="50" width="150" alt="" /></a></li>
+                        <li><a href="#"><img src="img/7594788ee7b34771e9c7bd1b2a362f8f.jpg" alt="" height="50" width="150" /></a></li>
+                        <li><a href="#"><img src="img/d0ede9e3e0d8c0f11b6b7b668bd71106.jpg" height="50" width="150" alt="" /></a></li>
+                        <li><a href="#"><img src="img/5d3c328d43a4a8ea9986b63b2b24a99f.jpg" height="50" width="150" alt="" /></a></li>
+                        <li><a href="#"><img src="img/04ec5c60c645abfbe3d6f5dd28f5b2bc.jpg" height="50" width="150" alt="" /></a></li>
+                        <li><a href="#"><img src="img/512e8543b6db2be86fdfff34c32db1d8.png" height="1416" width="4074" alt="" /></a></li>
+                        <li><a href="#"><img src="img/8eee3ab12954ab33a633c8ac7058db35.png" height="50" width="150" alt="" /></a></li>
+                        <li><a href="#"><img src="img/c9326f16f407233c5128cc908392a7ae.jpg" height="50" width="150" alt="" /></a></li>
+                        <li><a href="#"><img src="img/67f25c42cc8b1bb19ffab92388d01a71.jpg" height="50" width="150" alt="" /></a></li>
+                        <li><a href="#"><img src="img/8bef82c23eac7cdac4fc2c91c455b5cc.jpg" height="50" width="150" alt="" /></a></li>
+                        <li><a href="#"><img src="img/73d38898d3887f3422bf0a27f5924ebc.jpg" height="50" width="150" alt="" /></a></li>
                     </ul>
                 </div>
             </div>
             <div class="F3">
-                <div class="mt clear">
+                <div class="mt mt3 clear">
                     <div class="fl">
-                        <i class="iconfont icon-1lou"></i>
-                        <h4>食品酒水</h4>
+                        <i class="iconfont icon-3lou"></i>
+                        <h4>珠宝首饰</h4>
                     </div>
-                    <header class="fr">
+                    <header>
                         <span>热门推荐</span>
-                        <span>食品饮料</span>
-                        <span>热销名酒</span>
-                        <span>营养健康</span>
-                        <span>茶叶香茗</span>
+                        <span>珠宝首饰</span>
+                        <span>时尚钟表</span>
+                        <span>文化收藏</span>
                     </header>
                 </div>
-                <div class="mc">
-                    <div class="side">
+                <div class="mc mc3 clear">
+                    <div class="side fl">
                         <img src="img/aa92aff575edec7c9ac5b560f8db41e4.jpg" height="474" width="210" alt="" />
                         <div class="side_c">
                             <ul>
@@ -511,9 +545,38 @@
                             <a href="#"><span>自然味良品手指型饼干</span></a>
                         </div>
                     </div>
-                    <div class="content">
-                        
+                    <div class="content fl clear">
+                        <div class="con_l fl">
+                            <a href="#"><img src="img/352d52541b5345a5c6ac3f0176d1a07f.jpg" height="236" width="219" alt="" /><a>
+                            <a href="#"><img src="img/55cce60f677ca39999e4f0adccdb0770.jpg" height="236" width="219" alt="" /></a>
+                        </div>
+                        <div class="con_ban fl">
+                            <div class="con_ban_top1">
+                                <img src="img/3431084cdf9406883b9bc0c17fb0d8c0.jpg" height="236" width="339" alt="" />
+                            </div>
+                            <div class="con_ban_bottom1">
+                                <img src="img/f375b0603ca5d4098d279c76157a3537.jpg" height="236" width="339" alt="" />
+                            </div>
+                        </div>
+                        <div class="con_r fl">
+                            <a href="#"><img src="img/1db546566205e2abadfbbb6d83e12242.jpg" height="236" width="219" alt="" /></a>
+                            <a href="#"><img src="img/913ebfab9ba663833bf8e93172b65c2f.jpg" height="236" width="219" alt="" /></a>
+                        </div>
+                        <div class="con_r fl">
+                            <a href="#"><img src="img/f561b93d1f31b38eeaabb0e8cafba72b.jpg" alt="" /></a>
+                            <a href="#"><img src="img/1b435e98be7fdabf747a87fca946fa10.jpg" height="236" width="219" alt="" /></a>
+                        </div>
                     </div>
+                    <div class="content fl clear">
+                        <img src="img/yilou2.png" height="474" width="999" alt="" />
+                    </div>
+                    <div class="content fl clear">
+                        <img src="img/yilou3.png" height="474" width="999" alt="" />
+                    </div>
+                    <div class="content fl clear">
+                        <img src="img/yilou4.png" height="474" width="999" alt="" />
+                    </div>
+                    
                 </div>
                 <div class="floor1 clear">
                     <ul class="clear">
@@ -531,21 +594,21 @@
                 </div>
             </div>
             <div class="F4">
-                <div class="mt clear">
+                <div class="mt mt4 clear">
                     <div class="fl">
-                        <i class="iconfont icon-1lou"></i>
-                        <h4>食品酒水</h4>
+                        <i class="iconfont icon-4lou"></i>
+                        <h4>个护化妆</h4>
                     </div>
-                    <header class="fr">
+                    <header>
                         <span>热门推荐</span>
-                        <span>食品饮料</span>
-                        <span>热销名酒</span>
-                        <span>营养健康</span>
-                        <span>茶叶香茗</span>
+                        <span>面部护理</span>
+                        <span>洗发护发</span>
+                        <span>香水彩妆</span>
+                        <span>清洁用品</span>
                     </header>
                 </div>
-                <div class="mc">
-                    <div class="side">
+                <div class="mc mc4 clear">
+                    <div class="side fl">
                         <img src="img/aa92aff575edec7c9ac5b560f8db41e4.jpg" height="474" width="210" alt="" />
                         <div class="side_c">
                             <ul>
@@ -581,9 +644,41 @@
                             <a href="#"><span>自然味良品手指型饼干</span></a>
                         </div>
                     </div>
-                    <div class="content">
-                        
+                    <div class="content fl clear">
+                        <div class="con_l fl">
+                            <a href="#"><img src="img/352d52541b5345a5c6ac3f0176d1a07f.jpg" height="236" width="219" alt="" /><a>
+                            <a href="#"><img src="img/55cce60f677ca39999e4f0adccdb0770.jpg" height="236" width="219" alt="" /></a>
+                        </div>
+                        <div class="con_ban fl">
+                            <div class="con_ban_top1">
+                                <img src="img/3431084cdf9406883b9bc0c17fb0d8c0.jpg" height="236" width="339" alt="" />
+                            </div>
+                            <div class="con_ban_bottom1">
+                                <img src="img/f375b0603ca5d4098d279c76157a3537.jpg" height="236" width="339" alt="" />
+                            </div>
+                        </div>
+                        <div class="con_r fl">
+                            <a href="#"><img src="img/1db546566205e2abadfbbb6d83e12242.jpg" height="236" width="219" alt="" /></a>
+                            <a href="#"><img src="img/913ebfab9ba663833bf8e93172b65c2f.jpg" height="236" width="219" alt="" /></a>
+                        </div>
+                        <div class="con_r fl">
+                            <a href="#"><img src="img/f561b93d1f31b38eeaabb0e8cafba72b.jpg" alt="" /></a>
+                            <a href="#"><img src="img/1b435e98be7fdabf747a87fca946fa10.jpg" height="236" width="219" alt="" /></a>
+                        </div>
                     </div>
+                    <div class="content fl clear">
+                        <img src="img/yilou2.png" height="474" width="999" alt="" />
+                    </div>
+                    <div class="content fl clear">
+                        <img src="img/yilou3.png" height="474" width="999" alt="" />
+                    </div>
+                    <div class="content fl clear">
+                        <img src="img/yilou4.png" height="474" width="999" alt="" />
+                    </div>
+                    <div class="content fl clear">
+                        <img src="img/yilou5.png" height="474" width="999" alt="" />
+                    </div>
+                    
                 </div>
                 <div class="floor1 clear">
                     <ul class="clear">
@@ -601,21 +696,21 @@
                 </div>
             </div>
             <div class="F5">
-                <div class="mt clear">
+                <div class="mt mt5 clear">
                     <div class="fl">
-                        <i class="iconfont icon-1lou"></i>
-                        <h4>食品酒水</h4>
+                        <i class="iconfont icon-5lou"></i>
+                        <h4>服装配饰</h4>
                     </div>
-                    <header class="fr">
+                    <header>
                         <span>热门推荐</span>
-                        <span>食品饮料</span>
-                        <span>热销名酒</span>
-                        <span>营养健康</span>
-                        <span>茶叶香茗</span>
+                        <span>轻奢侈品</span>
+                        <span>国际女装</span>
+                        <span>流行鞋靴</span>
+                        <span>运动户外</span>
                     </header>
                 </div>
-                <div class="mc">
-                    <div class="side">
+                <div class="mc mc5 clear">
+                    <div class="side fl">
                         <img src="img/aa92aff575edec7c9ac5b560f8db41e4.jpg" height="474" width="210" alt="" />
                         <div class="side_c">
                             <ul>
@@ -651,9 +746,41 @@
                             <a href="#"><span>自然味良品手指型饼干</span></a>
                         </div>
                     </div>
-                    <div class="content">
-                        
+                    <div class="content fl clear">
+                        <div class="con_l fl">
+                            <a href="#"><img src="img/352d52541b5345a5c6ac3f0176d1a07f.jpg" height="236" width="219" alt="" /><a>
+                            <a href="#"><img src="img/55cce60f677ca39999e4f0adccdb0770.jpg" height="236" width="219" alt="" /></a>
+                        </div>
+                        <div class="con_ban fl">
+                            <div class="con_ban_top1">
+                                <img src="img/3431084cdf9406883b9bc0c17fb0d8c0.jpg" height="236" width="339" alt="" />
+                            </div>
+                            <div class="con_ban_bottom1">
+                                <img src="img/f375b0603ca5d4098d279c76157a3537.jpg" height="236" width="339" alt="" />
+                            </div>
+                        </div>
+                        <div class="con_r fl">
+                            <a href="#"><img src="img/1db546566205e2abadfbbb6d83e12242.jpg" height="236" width="219" alt="" /></a>
+                            <a href="#"><img src="img/913ebfab9ba663833bf8e93172b65c2f.jpg" height="236" width="219" alt="" /></a>
+                        </div>
+                        <div class="con_r fl">
+                            <a href="#"><img src="img/f561b93d1f31b38eeaabb0e8cafba72b.jpg" alt="" /></a>
+                            <a href="#"><img src="img/1b435e98be7fdabf747a87fca946fa10.jpg" height="236" width="219" alt="" /></a>
+                        </div>
                     </div>
+                    <div class="content fl clear">
+                        <img src="img/yilou2.png" height="474" width="999" alt="" />
+                    </div>
+                    <div class="content fl clear">
+                        <img src="img/yilou3.png" height="474" width="999" alt="" />
+                    </div>
+                    <div class="content fl clear">
+                        <img src="img/yilou4.png" height="474" width="999" alt="" />
+                    </div>
+                    <div class="content fl clear">
+                        <img src="img/yilou5.png" height="474" width="999" alt="" />
+                    </div>
+                    
                 </div>
                 <div class="floor1 clear">
                     <ul class="clear">
@@ -670,14 +797,127 @@
                     </ul>
                 </div>
             </div>
-            <div class="F6">
-                
+            
+            <div class="huiyuan">
+                <div class="vip_t clear">
+                    <div class="fl">
+                        <i class="iconfont icon-crown"></i>
+                        会员专享
+                    </div>   
+                    <ul class="fr clear">
+                        <li><a href="#">
+                            <i class="iconfont icon-kuaidi"></i>
+                            会员活动
+                        </a></li>
+                        <li><a href="#">
+                            <i class="iconfont icon-huiyuanquanyi"></i>
+                            会员权益
+                        </a></li>
+                        <li><a href="#">
+                            <i class="iconfont icon-liwu1"></i>
+                            物流查询
+                        </a></li>
+                    </ul>
+            </div>
+            <div class="vip_b clear">
+                <ul class="fl clear">
+                    <li>
+                        <img src="img/706bf0a58389d1c4a899b533e6f37970.jpg@240w_240h" alt="" />
+                        <p>天兴天池古椴雪蜜团购组 货号120167</p>
+                    </li>
+                    <li>
+                        <img src="img/120221_0.jpg@240w_240h" alt="" />
+                        <p>贡牌龙井-明前茶套组 货号120221</p>
+                    </li>
+                    <li>
+                        <img src="img/120344_0.jpg@240w_240h" alt="" />
+                        <p>八马茶业安溪铁观音特惠组 货号120344</p>
+                    </li>
+                    <li>
+                        <img src="img/119954_0.jpg@240w_240h" alt="" />
+                        <p>红塔带鱼罐头套组 货号119954</p>
+                    </li>
+                    <li>
+                        <img src="img/120238_0.jpg@240w_240h" alt="" />
+                        <p>方家铺子海味干贝超值组 货号120238</p>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
-    <div class="footer"></div>
-
-    <!-- <div class="footer">
+    <div class="pic">
+        <div class="container">
+            <ul class="clear">
+                <li><a href="#"><img src="img/qingsonggouwu.png" height="86" width="250" alt="" /></a></li>
+                <li><a href="#"><img src="img/tiantiantejia.png" height="86" width="250" alt="" /></a></li>
+                <li><a href="#"><img src="img/zhijianyanxuan.png" height="86" width="250" alt="" /></a></li>
+                <li><a href="#"><img src="img/zhengpinbaozheng.png" height="86" width="250" alt="" /></a></li>
+            </ul> 
+        </div>
+    </div>
+    <div class="faq">
+        <div class="container clear">
+            <div class="notice fl">
+                <h3>公告</h3>
+                <ul>
+                    <li><a href="#">【公告】关于8月15日至9月6日期间福建省厦门市停运通知</a></li>
+                    <li><a href="#">【公告】央广购物会员体系升级 8月会员月会员福利全面升值</a></li>
+                    <li><a href="#">【公告】央广购物天津有线频道位置前移至139 开启精彩新生活</a></li>
+                    <li><a href="#">【公告】央广购物、天猫直播打造汽车节直播秀 快进中国汽车文化</a></li>
+                </ul>
+            </div>
+            <div class="link fl">
+                <ul class="clear">
+                    <li>
+                        <dl>
+                            <dt>购物指南</dt>
+                            <dd><a href="#">免费注册</a></dd>
+                            <dd><a href="#">购物流程</a></dd>
+                            <dd><a href="#">用户注册协议</a></dd>
+                            <dd><a href="#">电子发票</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>商家服务</dt>
+                            <dd><a href="#">招商标准</a></dd>
+                            <dd><a href="#">平台总则</a></dd>
+                            <dd><a href="#">入驻注意事项</a></dd>
+                            <dd><a href="#">招商资质标准</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>支付配送</dt>
+                            <dd><a href="#">支付方式</a></dd>
+                            <dd><a href="#">配送范围</a></dd>
+                            <dd><a href="#">配送时间</a></dd>
+                            <dd><a href="#">购物卡</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>会员中心</dt>
+                            <dd><a href="#">会员等级</a></dd>
+                            <dd><a href="#">会员权益</a></dd>
+                            <dd><a href="#">购物金</a></dd>
+                            <dd><a href="#">找回密码</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>售后服务</dt>
+                            <dd><a href="#">售后服务政策</a></dd>
+                            <dd><a href="#">特色服务</a></dd>
+                            <dd><a href="#">无忧购物</a></dd>
+                            <dd><a href="#">权威监督</a></dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </div>  
+    </div>
+    <div class="footer">
         <div class="container">
             <p>
                 <a href="#">首页</a>
@@ -704,6 +944,6 @@
                 <img src="img/cnnic.png"/>
             </div>
         </div>
-    </div> -->
+    </div>
 </body>
 </html>

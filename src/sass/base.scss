@@ -88,7 +88,7 @@ a{text-decoration:none;}
                 }
             }
             ul{
-                position:absolute;top:40px;left:0;text-align:center;background:#343A3A;font-size:12px;width:162px;z-index:1000;
+                position:absolute;top:40px;left:0;text-align:center;background:#343A3A;font-size:12px;width:162px;z-index:1000;display:none;
                 li{
                     height:46px;border-bottom:1px dashed #494F4F;padding:0 10px;position: relative;
                     a{color:#fff;}
@@ -119,8 +119,9 @@ a{text-decoration:none;}
                 
                 li:last-of-type{margin-bottom:10px;}
             }
+            
         }
-        // h4:hover ul{display:block;}
+        h4:hover ul{display:block;}
             
         >ul{
             height:36px;line-height:36px;
@@ -138,6 +139,47 @@ a{text-decoration:none;}
     }
 }
 
+.pic{
+    height:86px;border:1px solid #ddd;background:#fff;border-right:0 none;
+    .container{
+        width:1210px;margin:0 auto;
+        ul{
+            padding:0 105px;
+            li{float:left;}
+        }        
+    }
+}
+
+.faq{
+    background:#fff;
+    .container{
+        width:1210px;margin:0 auto;
+        .notice{
+            height:134px;width:300px;margin: 20px 0 25px 4%;border-right:1px solid #ccc;
+            h3{color: #666;padding: 5px 5px 5px 5px;margin: 0px 0 5px;font-size:16px;}
+            ul{
+                font-size:12px;text-overflow:ellipsis;
+                li{width:250px;height:24px;line-height:24px;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;}
+                a{color:#999999;}
+            }
+        }
+        .link{
+            font-family:"宋体";padding:20px 0%;margin-left:50px;font-size:12px;
+            ul{
+                li{
+                    float:left;width:162px;height:136px;
+                    dl{
+                        dt{font-size:16px;color:#666;padding:5px;margin:5px 0;}
+                        dd{
+                            padding:4px 5px;
+                            a{color:#999;}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 .footer{
     height:210px;background-color:#343A3A;font-size:12px;color:#fff;
