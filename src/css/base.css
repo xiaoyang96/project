@@ -43,7 +43,7 @@ a {
 }
 
 .header .container {
-  width: 1200px;
+  width: 1210px;
   margin: 0 auto;
 }
 
@@ -114,7 +114,7 @@ a {
 }
 
 .search .container {
-  width: 1200px;
+  width: 1210px;
   margin: 0 auto;
 }
 
@@ -193,13 +193,12 @@ a {
 
 .nav {
   height: 40px;
-  width: 100%;
   border-bottom: 1px solid #F15C18;
   font-size: 14px;
 }
 
 .nav .container {
-  width: 1200px;
+  width: 1210px;
   margin: 0 auto;
 }
 

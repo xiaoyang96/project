@@ -6,6 +6,7 @@
 .container .fenlei {
   padding: 10px 0;
   z-index: 99999;
+  height: 30px;
 }
 
 .container .fenlei span {
@@ -61,6 +62,7 @@
 
 .container .select {
   font-size: 12px;
+  margin-bottom: 10px;
 }
 
 .container .select .select_top {
@@ -69,6 +71,10 @@
   background: #F2F2F2;
   padding-left: 10px;
   border: 1px solid #E6E6E6;
+}
+
+.container .select .select_top span {
+  color: red;
 }
 
 .container .select .select_bot {
@@ -83,4 +89,128 @@
   border-right: 1px solid #ccc;
   line-height: 34px;
   text-align: center;
+}
+
+.container .list_nav {
+  font-size: 12px;
+}
+
+.container .list_nav ul {
+  height: 40px;
+  line-height: 40px;
+  background: #F5F5F5;
+  border: 1px solid #ccc;
+}
+
+.container .list_nav ul li {
+  float: left;
+  padding: 0 12px;
+  border-right: 1px solid #ccc;
+}
+
+.container .list_nav ul li:nth-of-type(5) input {
+  width: 65px;
+  height: 24px;
+  line-height: 24px;
+}
+
+.container #datalist ul {
+  overflow: hidden;
+}
+
+.container #datalist ul li {
+  float: left;
+  width: 222px;
+  height: 385px;
+  font-size: 12px;
+  margin: 20px 10px 0 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.container #datalist ul li img {
+  width: 220px;
+  height: 220px;
+  border-bottom: 1px solid #fff;
+}
+
+.container #datalist ul li img:hover {
+  border-bottom: 1px solid #ccc;
+}
+
+.container #datalist ul li h4, .container #datalist ul li p {
+  padding: 0 8px;
+  height: 24px;
+  line-height: 24px;
+}
+
+.container #datalist ul li .price {
+  font-size: 20px;
+  line-height: 30px;
+  height: 30px;
+  padding-top: 10px;
+  color: #FF5300;
+}
+
+.container #datalist ul li .title {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #333333;
+}
+
+.container #datalist ul li .tedian {
+  color: #FF6D02;
+}
+
+.container #datalist ul li .store {
+  border-bottom: 1px solid #ccc;
+}
+
+.container #datalist ul li .store:hover {
+  text-decoration: underline;
+}
+
+.container #datalist ul li button {
+  margin: 10px 0;
+  width: 104px;
+  height: 30px;
+  line-height: 30px;
+  background: #FF6D02;
+  color: #FFFFFF;
+  border: 0 none;
+}
+
+.container #datalist ul li button:hover {
+  background: #C81623;
+}
+
+.container #datalist ul li:hover {
+  border: 1px solid #F15C18;
+}
+
+.container #page {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.container #page span {
+  display: inline-block;
+  margin: 5px;
+  width: 30px;
+  line-height: 1.8;
+  text-align: center;
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.container #page span:hover {
+  border: 1px solid #ff6d02;
+}
+
+.container #page span.active {
+  background-color: #FF6D02;
+  color: #fff;
 }

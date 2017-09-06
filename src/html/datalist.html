@@ -4,15 +4,94 @@
     <meta charset="UTF-8" />
     <title>详情页</title>
     <link rel="stylesheet" type="text/css" href="../css/base.css" />
-    <!-- <link rel="stylesheet" type="text/css" href="../css/carlist.css" /> -->
+    <link rel="stylesheet" type="text/css" href="../css/datalist.css" />
     <link rel="stylesheet" type="text/css" href="../font/font_2tc6l6ui9xdpldi/iconfont.css" />
     <script type="text/javascript" src="../js/require.js" data-main="../js/datalist"></script>
 </head>
 <body>
-    <div class="common_header">
+    <!-- 头部公共部分load引入 -->
+    <div class="common_header"></div>
+
+    <div class="goods_title">
+        <i class="iconfont icon-jia"></i>
+        <span>家用电器</span>
+        <i class="iconfont icon-xiangshang"></i>
+        <h4 id="goodsName"></h4>
+    </div>
+
+    <div class="container c_goods">
+        <!-- 商品详情 --> 
+        <div class="goods clear">
+            <div class="goods_l fl">
+                <img src="" id="goodsUrl" />
+
+            </div>
+            <div class="goods_c fl">
+                <h4 id="title"></h4>
+                <p id="tedian"></p>
+                <p class="cuxiao">促销-天天特价</p>
+                <p class="price">价格<span>￥</span><span id="price"></span></p>
+                <p class="wuliu">物流<span>配送至</span><span>请选择地区<i class="iconfont icon-arrow-down"></i></span></p>
+                <p>服务<span>由<span id="store"></span>发货，并提供售后服务</span></p>
+                <div class="qty">数量<div><i class="iconfont icon-jianhao1"></i><span>1</span><i class="iconfont icon-jiahao"></i></div></div>
+                <button class="buy">立即购买</button>
+                <button class="addCar"><i class="iconfont icon-gouwuche"></i>加入购物车</button>
+            </div>
+            <div class="goods_r fl">
+                
+            </div>
+        </div>
         
     </div>
+
+
+
+
+
     <!-- <div class="common_footer"></div>
     <div class="footer"></div> -->
+
+    <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded',function(){
+        var goodsName = document.getElementById('goodsName');
+        var goodsUrl = document.getElementById('goodsUrl');
+        var title = document.getElementById('title');
+        var tedian = document.getElementById('tedian');
+        var price = document.getElementById('price');
+        var store = document.getElementById('store');
+
+        var params = location.search.substring(1).split('&');
+        // console.log(params);
+
+        // 遍历数据
+        params.forEach(function(item){
+            var arr = item.split('=');
+
+            // 解码
+            var val = decodeURI(arr[1]);
+
+            if(arr[0] == 'title'){
+                title.innerHTML = val;
+            }else if(arr[0] == 'imgurl'){
+                goodsUrl.src = val;
+            }else if(arr[0] == 'tedian'){
+                tedian.innerHTML = val;
+            }else if(arr[0] == 'price'){
+                price.innerHTML = val;
+            }else if(arr[0] == 'goodsName'){
+                goodsName.innerHTML = val;
+            }else if(arr[0] == 'store'){
+                store.innerHTML = val;
+            }
+        });
+
+
+
+
+
+
+    });
+    </script>
+
 </body>
 </html>

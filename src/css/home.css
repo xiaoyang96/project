@@ -175,7 +175,7 @@
 .container .F1 .mt header, .container .F2 .mt header, .container .F3 .mt header, .container .F4 .mt header, .container .F5 .mt header {
   position: absolute;
   right: 0;
-  top: 0;
+  top: -1px;
   height: 34px;
   line-height: 34px;
   z-index: 1;
@@ -196,7 +196,7 @@
   height: 33px;
   line-height: 30px;
   border-bottom: 0 none;
-  margin-bottom: -1px;
+  border-bottom: 2px solid #fff;
 }
 
 .container .F1 .mc .side, .container .F2 .mc .side, .container .F3 .mc .side, .container .F4 .mc .side, .container .F5 .mc .side {

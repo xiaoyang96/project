@@ -1,0 +1,157 @@
+.goods_title {
+  padding: 0 30px;
+  height: 36px;
+  line-height: 36px;
+  font-size: 12px;
+  color: #777777;
+  background: #F2F2F2;
+}
+
+.goods_title span:hover {
+  color: #FF6D02;
+}
+
+.goods_title h4 {
+  display: inline-block;
+  font-weight: normal;
+  color: #999999;
+}
+
+.c_goods {
+  padding: 0 20px;
+  background: #F2F2F2;
+}
+
+.c_goods .goods {
+  background: #fff;
+}
+
+.c_goods .goods .goods_l {
+  width: 380px;
+  height: 490px;
+}
+
+.c_goods .goods .goods_l #goodsUrl {
+  width: 360px;
+  height: 360px;
+  margin-left: 10px;
+}
+
+.c_goods .goods .goods_c {
+  width: 590px;
+  margin-left: 6px;
+  font-size: 12px;
+}
+
+.c_goods .goods .goods_c h4 {
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.c_goods .goods .goods_c p {
+  padding-left: 20px;
+}
+
+.c_goods .goods .goods_c p > span:first-of-type {
+  padding-left: 50px;
+}
+
+.c_goods .goods .goods_c #tedian {
+  color: #FF7300;
+  height: 30px;
+  line-height: 24px;
+  padding-left: 0;
+}
+
+.c_goods .goods .goods_c .cuxiao {
+  height: 30px;
+  line-height: 30px;
+  background: #F15C18;
+  color: #FFFF00;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.c_goods .goods .goods_c .price {
+  padding: 10px 0;
+  height: 40px;
+  background: #F6F3E5;
+  line-height: 36px;
+  padding-left: 20px;
+}
+
+.c_goods .goods .goods_c .price span:first-of-type {
+  color: #FE5300;
+  font-size: 20px;
+}
+
+.c_goods .goods .goods_c .price #price {
+  font-size: 30px;
+  color: #FE5300;
+}
+
+.c_goods .goods .goods_c .wuliu {
+  height: 60px;
+  line-height: 60px;
+}
+
+.c_goods .goods .goods_c #store {
+  padding: 0 5px;
+  color: #E80012;
+  height: 30px;
+  line-height: 30px;
+}
+
+.c_goods .goods .goods_c .qty {
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+.c_goods .goods .goods_c .qty div {
+  display: inline-block;
+  margin-left: 50px;
+  text-align: center;
+}
+
+.c_goods .goods .goods_c .qty div i {
+  display: inline-block;
+  height: 28px;
+  width: 28px;
+  line-height: 28px;
+  border: 1px solid #E1E1E1;
+}
+
+.c_goods .goods .goods_c .qty div span {
+  display: inline-block;
+  height: 28px;
+  width: 48px;
+  line-height: 28px;
+  border-top: 1px solid #E1E1E1;
+  border-bottom: 1px solid #E1E1E1;
+}
+
+.c_goods .goods .goods_c button {
+  height: 42px;
+  line-height: 42px;
+  font-size: 18px;
+}
+
+.c_goods .goods .goods_c .buy {
+  margin-left: 80px;
+  width: 152px;
+  background: #FF6D02;
+  color: #FFFFFF;
+  border: 0 none;
+}
+
+.c_goods .goods .goods_c .addCar {
+  margin-left: 14px;
+  width: 150px;
+  background: #FFF5EC;
+  border: 1px solid #F2DCBC;
+  color: #FF6D02;
+}
+
+.c_goods .goods .goods_c .addCar i {
+  font-size: 20px;
+}

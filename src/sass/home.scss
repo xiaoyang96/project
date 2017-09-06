@@ -195,11 +195,12 @@
                 h4{display:inline-block;height:34px;line-height:34px;font-size:24px;font-weight:normal;}
             }
             header{
-                position:absolute;right:0;top:0;height:34px;line-height:34px;z-index:1;background:#fff;
+                position:absolute;right:0;top:-1px;height:34px;line-height:34px;z-index:1;background:#fff;
                 span{display:inline-block;height:34px;line-height:34px;padding:0 8px;}
                 .active{
-                    border-left:1px solid #FE5621;border-right:1px solid #FE5621;border-top:3px solid #FE5621;height:33px;line-height:30px;border-bottom:0 none;margin-bottom:-1px;}
+                    border-left:1px solid #FE5621;border-right:1px solid #FE5621;border-top:3px solid #FE5621;height:33px;line-height:30px;border-bottom:0 none;border-bottom:2px solid #fff;}
             }
+
             // header{
             //     background:#fff;border:1px solid #fff;border-bottom:0 none;z-index:1;height:34px;line-height:34px;
             //     span{display:inline-block;height:34px;line-height:34px;padding:0 8px;margin:0 1px;}
