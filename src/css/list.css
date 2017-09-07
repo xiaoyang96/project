@@ -161,6 +161,9 @@
 
 .container #datalist ul li .tedian {
   color: #FF6D02;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .container #datalist ul li .store {

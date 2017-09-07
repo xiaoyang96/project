@@ -6,10 +6,15 @@
 .c_goods{
     padding:0 20px;background:#F2F2F2;
     .goods{
-        background:#fff;
+        background:#fff;border-bottom:1px solid #F2F2F2;
         .goods_l{
             width:380px;height:490px;
             #goodsUrl{width:360px;height:360px;margin-left:10px;}
+            .xiaotu{
+                padding-top:20px;padding-left:30px;box-sizing:border-box;
+                img{display:inline-block;width:50px;height:50px;margin:0 4px;border:1px solid #fff;}
+                img:hover{border:1px solid #F15C18;}
+            }
         }
         .goods_c{
             width:590px;margin-left:6px;font-size:12px;
@@ -41,13 +46,40 @@
                     span{display:inline-block;height:28px;width:48px;line-height:28px;border-top:1px solid #E1E1E1;border-bottom:1px solid #E1E1E1;}
                 }
             }
-            button{height:42px;line-height:42px;font-size:18px;}
-            .buy{margin-left:80px;width:152px;background:#FF6D02;color:#FFFFFF;border:0 none;}
-            .addCar{
-                margin-left:14px;width:150px;background:#FFF5EC;border:1px solid #F2DCBC;color:#FF6D02;
-                i{font-size:20px;}
+            .btns{
+                padding-top:5px;
+                button{height:42px;line-height:42px;font-size:18px;display:inline-block;float:left;}
+                .buy{margin-left:94px;width:152px;background:#FF6D02;color:#FFFFFF;border:0 none;}
+                .addCar{
+                    margin-left:14px;width:150px;background:#FFF5EC;border:1px solid #F2DCBC;color:#FF6D02;
+                    i{font-size:20px;}
+                }
+            }
+            
+            .fuwu{
+                height:30px;line-height:30px;padding-top:10px;
+                i{padding-left:25px;}
             }
         }
     }
+}
 
+.c_goodsNews{
+    padding:0 20px;background:#fff;
+    .goodsNews{
+        padding-top:20px;
+        .goodsNews_l{
+            width:210px;min-height:100px;border:1px solid #ccc;margin-right:10px;
+        }
+        .goodsNews_r{
+            width:1000px;
+            ul{
+                border:1px solid #E5E5E5;border-top:1px solid #F15C18;padding-left:10px;
+                li{float:left;padding:0 20px;height:50px;line-height:50px;font-size:14px;}
+            }
+            .content{
+
+            }
+        }
+    }
 }

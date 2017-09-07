@@ -20,6 +20,7 @@
             * fwrite(file,content)
      */
     // 三元运算格式：条件?成立:不成立
+    
     $page_no = isset($_GET['pageNo']) ? $_GET['pageNo'] : 1;
     $qty = isset($_GET['qty']) ? $_GET['qty'] : 10;
 
@@ -28,6 +29,7 @@
     // ../上级目录
     // ./当前目录
     $file_url = './data/goodslist.json';
+    // $file_url = './list.php';
 
     // 打开文件
     $myfile = fopen($file_url, 'r');

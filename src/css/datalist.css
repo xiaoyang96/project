@@ -24,6 +24,7 @@
 
 .c_goods .goods {
   background: #fff;
+  border-bottom: 1px solid #F2F2F2;
 }
 
 .c_goods .goods .goods_l {
@@ -35,6 +36,24 @@
   width: 360px;
   height: 360px;
   margin-left: 10px;
+}
+
+.c_goods .goods .goods_l .xiaotu {
+  padding-top: 20px;
+  padding-left: 30px;
+  box-sizing: border-box;
+}
+
+.c_goods .goods .goods_l .xiaotu img {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0 4px;
+  border: 1px solid #fff;
+}
+
+.c_goods .goods .goods_l .xiaotu img:hover {
+  border: 1px solid #F15C18;
 }
 
 .c_goods .goods .goods_c {
@@ -130,21 +149,27 @@
   border-bottom: 1px solid #E1E1E1;
 }
 
-.c_goods .goods .goods_c button {
+.c_goods .goods .goods_c .btns {
+  padding-top: 5px;
+}
+
+.c_goods .goods .goods_c .btns button {
   height: 42px;
   line-height: 42px;
   font-size: 18px;
+  display: inline-block;
+  float: left;
 }
 
-.c_goods .goods .goods_c .buy {
-  margin-left: 80px;
+.c_goods .goods .goods_c .btns .buy {
+  margin-left: 94px;
   width: 152px;
   background: #FF6D02;
   color: #FFFFFF;
   border: 0 none;
 }
 
-.c_goods .goods .goods_c .addCar {
+.c_goods .goods .goods_c .btns .addCar {
   margin-left: 14px;
   width: 150px;
   background: #FFF5EC;
@@ -152,6 +177,50 @@
   color: #FF6D02;
 }
 
-.c_goods .goods .goods_c .addCar i {
+.c_goods .goods .goods_c .btns .addCar i {
   font-size: 20px;
+}
+
+.c_goods .goods .goods_c .fuwu {
+  height: 30px;
+  line-height: 30px;
+  padding-top: 10px;
+}
+
+.c_goods .goods .goods_c .fuwu i {
+  padding-left: 25px;
+}
+
+.c_goodsNews {
+  padding: 0 20px;
+  background: #fff;
+}
+
+.c_goodsNews .goodsNews {
+  padding-top: 20px;
+}
+
+.c_goodsNews .goodsNews .goodsNews_l {
+  width: 210px;
+  min-height: 100px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+.c_goodsNews .goodsNews .goodsNews_r {
+  width: 1000px;
+}
+
+.c_goodsNews .goodsNews .goodsNews_r ul {
+  border: 1px solid #E5E5E5;
+  border-top: 1px solid #F15C18;
+  padding-left: 10px;
+}
+
+.c_goodsNews .goodsNews .goodsNews_r ul li {
+  float: left;
+  padding: 0 20px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 14px;
 }

@@ -23,25 +23,32 @@
         <!-- 商品详情 --> 
         <div class="goods clear">
             <div class="goods_l fl">
-                <img src="" id="goodsUrl" />
-
+                <!-- <img src="" id="goodsUrl" /> -->
             </div>
-            <div class="goods_c fl">
-                <h4 id="title"></h4>
-                <p id="tedian"></p>
-                <p class="cuxiao">促销-天天特价</p>
-                <p class="price">价格<span>￥</span><span id="price"></span></p>
-                <p class="wuliu">物流<span>配送至</span><span>请选择地区<i class="iconfont icon-arrow-down"></i></span></p>
-                <p>服务<span>由<span id="store"></span>发货，并提供售后服务</span></p>
-                <div class="qty">数量<div><i class="iconfont icon-jianhao1"></i><span>1</span><i class="iconfont icon-jiahao"></i></div></div>
-                <button class="buy">立即购买</button>
-                <button class="addCar"><i class="iconfont icon-gouwuche"></i>加入购物车</button>
-            </div>
+            <div class="goods_c fl"></div>
             <div class="goods_r fl">
                 
             </div>
         </div>
         
+    </div>
+    <div class="container c_goodsNews">
+        <div class="goodsNews clear">
+            <div class="goodsNews_l fl">
+                
+            </div>
+            <div class="goodsNews_r fl">
+                <ul class="clear">
+                    <li>商品详情</li>
+                    <li>商品评价</li>
+                    <li>购买咨询</li>
+                    <li>售后保障</li>
+                </ul>
+                <div class="content">
+                    
+                </div>
+            </div>
+        </div>        
     </div>
 
 
@@ -52,38 +59,109 @@
     <div class="footer"></div> -->
 
     <script type="text/javascript">
+    // document.addEventListener('DOMContentLoaded',function(){
+    //     var goodsName = document.getElementById('goodsName');
+    //     var goodsUrl = document.getElementById('goodsUrl');
+    //     var title = document.getElementById('title');
+    //     var tedian = document.getElementById('tedian');
+    //     var price = document.getElementById('price');
+    //     var store = document.getElementById('store');
+
+    //     var params = location.search.substring(1).split('&');
+    //     console.log(params);
+
+    //     // 遍历数据
+    //     params.forEach(function(item){
+    //         var arr = item.split('=');
+
+    //         // 解码
+    //         var val = decodeURI(arr[1]);
+
+    //         if(arr[0] == 'title'){
+    //             title.innerHTML = val;
+    //         }else if(arr[0] == 'imgurl'){
+    //             goodsUrl.src = val;
+    //         }else if(arr[0] == 'tedian'){
+    //             tedian.innerHTML = val;
+    //         }else if(arr[0] == 'price'){
+    //             price.innerHTML = val;
+    //         }else if(arr[0] == 'goodsName'){
+    //             goodsName.innerHTML = val;
+    //         }else if(arr[0] == 'store'){
+    //             store.innerHTML = val;
+    //         }
+    //     });
+    // });
+
     document.addEventListener('DOMContentLoaded',function(){
-        var goodsName = document.getElementById('goodsName');
-        var goodsUrl = document.getElementById('goodsUrl');
-        var title = document.getElementById('title');
-        var tedian = document.getElementById('tedian');
-        var price = document.getElementById('price');
-        var store = document.getElementById('store');
+        var goods_l = document.getElementsByClassName('goods_l')[0];
+        // console.log(goods_l);
+        var goods_c = document.getElementsByClassName('goods_c')[0];
+        var content = document.getElementsByClassName('content')[0];
+        var xiaotu = document.getElementsByClassName('xiaotu')[0];
 
-        var params = location.search.substring(1).split('&');
-        // console.log(params);
 
-        // 遍历数据
-        params.forEach(function(item){
-            var arr = item.split('=');
+        var params = location.search.substring(1).split('=');
+        var guid = params[1];
+        console.log(guid);
 
-            // 解码
-            var val = decodeURI(arr[1]);
+        // 发起ajax请求
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function(){
+            if(xhr.readyState ===4 && (xhr.status === 200 || xhr.status === 304)){
+                var res = xhr.responseText;
 
-            if(arr[0] == 'title'){
-                title.innerHTML = val;
-            }else if(arr[0] == 'imgurl'){
-                goodsUrl.src = val;
-            }else if(arr[0] == 'tedian'){
-                tedian.innerHTML = val;
-            }else if(arr[0] == 'price'){
-                price.innerHTML = val;
-            }else if(arr[0] == 'goodsName'){
-                goodsName.innerHTML = val;
-            }else if(arr[0] == 'store'){
-                store.innerHTML = val;
+                try{
+                    res = JSON.parse(res);
+                }catch(err){
+                    try{
+                        res = eval('(' + res + ')');
+                    }catch(e){
+
+                    }
+                }
+                console.log(res);
+
+                
+
+                // 数据写入
+                goods_l.innerHTML = `<img src="/project/src/img/${res.imgurl}" id="goodsUrl" />
+                <div class="xiaotu">
+                    <img src="/project/src/img/${res.imgurl}" />
+                    <img src="/project/src/img/${res.imgurl2}" />
+                    <img src="/project/src/img/${res.imgurl3}" />
+                    <img src="/project/src/img/${res.imgurl4}" />
+                    <img src="/project/src/img/${res.imgurl5}" /></div>`;
+
+                // if((res.imgurl4 !== ''||null) && (res.imgurl5 === ''||null)){
+                //     goods_l.innerHTML = `<img src="/project/src/img/${res.imgurl}" id="goodsUrl" />
+                //     <div class="xiaotu">
+                //         <img src="/project/src/img/${res.imgurl}" />
+                //         <img src="/project/src/img/${res.imgurl2}" />
+                //         <img src="/project/src/img/${res.imgurl3}" />
+                //         <img src="/project/src/img/${res.imgurl4}" />`;                  
+                // }else if((res.imgurl4 !== ''||null) && (res.imgurl5 == ''||null)){
+
+                // }
+
+
+                goods_c.innerHTML = `<h4 id="title">${res.title}</h4>
+                <p id="tedian">${res.tedian}</p>
+                <p class="cuxiao">促销-天天特价</p>
+                <p class="price">价格<span>￥</span><span id="price">${res.price}</span></p>
+                <p class="wuliu">物流<span>配送至</span><span>请选择地区<i class="iconfont icon-arrow-down"></i></span></p>
+                <p>服务<span>由<span id="store">${res.store}</span>发货，并提供售后服务</span></p>
+                <div class="qty">数量<div><i class="iconfont icon-jianhao1"></i><span>1</span><i class="iconfont icon-jiahao"></i></div></div>
+                <div class="btns clear"><button class="buy">立即购买</button><button class="addCar"><i class="iconfont icon-gouwuche"></i>加入购物车</button></div>
+                <p class="fuwu">服务承诺<i class="iconfont icon-013"></i>7天无理由退换货</p>`;
+
+                content.innerHTML = `<img src="/project/src/img/${res.imgjs}" />`;
+
             }
-        });
+        }
+
+        xhr.open('get',`/project/src/api/goods.php?guid=${guid}`,true);
+        xhr.send();
 
 
 
