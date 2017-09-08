@@ -193,9 +193,9 @@
   border-left: 1px solid #FE5621;
   border-right: 1px solid #FE5621;
   border-top: 3px solid #FE5621;
-  height: 30px;
-  line-height: 32px;
-  border-bottom: 5px solid #fff;
+  height: 31px;
+  line-height: 30px;
+  border-bottom: 4px solid #fff;
 }
 
 .container .F1 .mc .side, .container .F2 .mc .side, .container .F3 .mc .side, .container .F4 .mc .side, .container .F5 .mc .side {

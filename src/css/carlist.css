@@ -1,0 +1,220 @@
+.logo {
+  height: 86px;
+  padding-top: 10px;
+  padding-left: 35px;
+  border-bottom: 1px solid #F15C18;
+}
+
+.logo img {
+  display: inline-block;
+}
+
+.box {
+  width: 100%;
+  background: #f5f5f5;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.container .mycar {
+  padding: 15px 10px;
+}
+
+.container .mycar h3 {
+  height: 30px;
+  line-height: 30px;
+  font-size: 24px;
+  font-weight: normal;
+  color: #616161;
+}
+
+.container .mycar p {
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  color: #BFBFBF;
+}
+
+.container .xinxi {
+  padding: 6px 10px 14px 10px;
+  font-size: 12px;
+}
+
+.container .xinxi ul {
+  line-height: 20px;
+  color: #212121;
+}
+
+.container .xinxi ul li {
+  float: left;
+}
+
+.container .xinxi ul li:nth-of-type(1) {
+  width: 110px;
+}
+
+.container .xinxi ul li:nth-of-type(1) input {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.container .xinxi ul li:nth-of-type(2) {
+  width: 480px;
+  text-indent: 12px;
+}
+
+.container .xinxi ul li:nth-of-type(3) {
+  width: 166px;
+  text-indent: 70px;
+}
+
+.container .xinxi ul li:nth-of-type(4) {
+  width: 175px;
+  padding-right: 15px;
+  text-align: right;
+}
+
+.container .xinxi ul li:nth-of-type(5) {
+  width: 78px;
+  text-indent: 30px;
+}
+
+.container .xinxi ul li:nth-of-type(6) {
+  width: 150px;
+  text-align: right;
+}
+
+.container #carList {
+  font-size: 12px;
+}
+
+.container #carList li {
+  background: #fff;
+  padding: 20px 20px 25px 20px;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+}
+
+.container #carList li input {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 5px;
+}
+
+.container #carList li img {
+  width: 80px;
+  height: 80px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.container #carList li p {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.container #carList li .title {
+  width: 500px;
+}
+
+.container #carList li .title:hover {
+  color: #FF7300;
+}
+
+.container #carList li .qty {
+  width: 100px;
+  padding-top: 35px;
+}
+
+.container #carList li .qty span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  border: 1px solid #ccc;
+}
+
+.container #carList li .qty #qty {
+  border-left: 0 none;
+  border-right: 0 none;
+}
+
+.container #carList li .qty #jian:hover, .container #carList li .qty #jia:hover {
+  color: #F15C18;
+  border-color: #F15C18;
+}
+
+.container #carList li .price {
+  padding-top: 40px;
+  width: 180px;
+  padding-right: 15px;
+  text-align: right;
+}
+
+.container #carList li .Price {
+  padding-top: 40px;
+  margin-left: 170px;
+  font-size: 14px;
+  color: #FF7300;
+}
+
+.container #carList li #btnDel {
+  display: block;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  line-height: 30px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #eee;
+}
+
+.container .subPrice {
+  height: 56px;
+  background: #eee;
+  line-height: 56px;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #222;
+}
+
+.container .subPrice .actions {
+  padding-left: 20px;
+  width: 190px;
+}
+
+.container .subPrice .actions input {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.container .subPrice .actions #Del {
+  margin-left: 20px;
+}
+
+.container .subPrice .summary {
+  width: 820px;
+  box-sizing: border-box;
+  padding-left: 300px;
+}
+
+.container .subPrice .summary ul li {
+  float: left;
+  margin-left: 30px;
+}
+
+.container .subPrice .from button {
+  background-color: #FF7300;
+  color: #FFF;
+  cursor: pointer;
+  width: 150px;
+  height: 56px;
+  border: 0 none;
+  font-size: 20px;
+}

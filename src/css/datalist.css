@@ -28,14 +28,13 @@
 }
 
 .c_goods .goods .goods_l {
-  width: 380px;
+  width: 360px;
   height: 490px;
 }
 
 .c_goods .goods .goods_l #goodsUrl {
   width: 360px;
   height: 360px;
-  margin-left: 10px;
 }
 
 .c_goods .goods .goods_l .xiaotu {
