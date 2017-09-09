@@ -127,10 +127,27 @@
 
 .ban{
     background:#E0CCB1;padding-left:182px;
-    .ban_l{
-        width:784px;height:400px;
-    }
+    /*------------轮播图------------*/
+    .carousel{
+        width:784px;height:400px;position:relative;overflow:hidden;
+        ul{
+            width:3920px;position:absolute;top:0;left:0;
+            li{float:left;}
+            img{height:400px;width:784px;}
+        }
+        >span{position:absolute;left:10px;top:50%;margin-top:-30px;width:30px;height:60px;line-height:60px;text-align:center;background-color: rgba(0,0,0,0.3);color:#fff;}
+        >span.next{left:auto;right:10px;}
+        .page{
+            position:absolute;right:50px;bottom:10px;/*transform:translate(-50%,0);*/
+            span{display:inline-block;margin:0 5px;width:20px;height:20px;line-height: 20px;text-align:center;background-color: rgba(255,255,255,0.8);border-radius:50%;}
+            span.active{background-color: #fc0;}
+
+        }
+
+    }   
+        
     .ban_r{
+
         width:260px;height:400px;padding:0 34px;box-sizing:border-box;
         p{text-align:center;}
         p:nth-of-type(1){font-size:18px;height:60px;line-height:60px;font-weight:bold;}

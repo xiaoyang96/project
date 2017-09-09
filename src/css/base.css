@@ -251,14 +251,14 @@ a {
 }
 
 .nav .container h4 ul li .nav_ej {
-  width: 800px;
-  height: 300px;
-  border: 1px solid #000;
+  width: 1000px;
+  height: 500px;
   border-left: 0 none;
   position: absolute;
   left: 162px;
   top: 0;
   display: none;
+  background: #fff;
 }
 
 .nav .container h4 ul li:hover {

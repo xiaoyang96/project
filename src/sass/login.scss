@@ -16,9 +16,14 @@
             width:400px;height:404px;padding:19px 19px 29px 29px;border:1px solid #e6e6e6;border-radius:5px;background-color:#fff;margin-top:20px;
             .tab{
                 color:#aaa;
-                ul li{float:left;width:200px;height:22px;line-height:22px;text-align:center;padding-bottom:13px;font-size:18px;}
+                ul{
+                    li{float:left;width:200px;height:22px;line-height:22px;text-align:center;padding-bottom:13px;font-size:18px;}
+                    li.active{border-bottom:3px solid red;color:red;}
+                } 
+
                 .c1{
-                    padding:20px 40px 0 40px;display:none;
+                    padding:20px 40px 0 40px;
+                    // display:none;
                     div{
                         border:1px solid #ccc;height:52px;line-height:52px;font-size:14px;
                         span{padding:0 20px;}

@@ -13,24 +13,8 @@
     border:10px solid #D1D1D1;box-sizing: border-box;background-color: #FAFAFA;color:#aaa;
     .main_l{
         width:620px;
-        p{height:58px;margin:0 15px;padding-left:108px;color:#A59999;line-height:58px;border-bottom:1px solid #E6E6E6;font-size:20px;}
-        div{
-            margin-left:120px;border:1px solid #ccc;height:52px;line-height:52px;
-            span{padding:0 20px;color:#666;}
-        }
-        div:first-of-type{
-            width:400px;margin-top:50px;
-            input{border:0 none;height:50px;}
-        }
-        div:nth-of-type(2){
-            width:278px;border-top:0 none;
-            input{border:0 none;height:50px;}
-        }
-        div:nth-of-type(3){
-            border:0 none;
-            span{padding:0 10px;font-size:14px;}
-        }
-        button{margin-left:120px;width:400px;height:52px;border:0 none;border-radius:5px;background-color:#FF500B;color:#fff;font-weight:bold;}
+        p{height:58px;margin:0 15px;padding-left:108px;color:#A59999;line-height:58px;border-bottom:1px solid #E6E6E6;font-size:20px;margin-bottom:50px;}
+        
     }
     .main_r{
         width:240px;height:500px;margin:20px 0;border-left:1px solid #E6E6E6;box-sizing:border-box;

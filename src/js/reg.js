@@ -2,5 +2,12 @@
 * @Author: Marte
 * @Date:   2017-08-31 21:39:22
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-08-31 21:39:30
+* @Last Modified time: 2017-09-09 16:29:27
 */
+
+require(['config'],function(){
+    require(['jquery'],function($){
+        
+
+    });
+})

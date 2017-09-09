@@ -397,3 +397,136 @@ function type(data){
 	// [object Array]
 	return Object.prototype.toString.call(data).slice(8,-1).toLowerCase()
 }
+
+
+// 轮播图
+
+function Carousel(){
+    var carousel = document.querySelector('.carousel');
+    var ul = carousel.querySelector('ul');
+
+    // 复制第一张到最后
+    ul.appendChild(ul.children[0].cloneNode(true));
+
+    var len = ul.children.length;
+
+    // 默认显示第一张图片
+    var index = 0;
+
+    // 每张图片的宽度
+    var itemWidth = carousel.offsetWidth;
+
+    // 设置容器的宽度，让所有图片遂平排列
+    ul.style.width = itemWidth*len + 'px';
+
+    // 生成分页
+    var page = document.createElement('div');
+    page.className = 'page';
+
+    for(var i=0;i<len-1;i++){
+        var span = document.createElement('span');
+        span.innerText = i+1;
+
+        // 高亮
+        if(i===index){
+            span.className = 'active';
+        }
+
+        page.appendChild(span);
+    }
+
+    carousel.appendChild(page);
+
+    /*
+        index   left
+        0       0
+        1       -810
+        2       -1620
+        3       -2430
+
+        推导公式：top = -index*810;
+     */
+
+    // 每隔2s切换一张图片
+    // 改变ul的left值
+    var outerTimer = setInterval(autoPlay,4000);
+
+    // 鼠标移入移出
+    carousel.onmouseenter = ()=>{
+        clearInterval(outerTimer);
+    }
+
+    carousel.onmouseleave = ()=>{
+        outerTimer = setInterval(autoPlay,4000);
+    }
+
+
+    
+    carousel.onclick = (e)=>{
+        var target = e.target;
+        // console.log(666);
+        
+        // 前后按钮
+        if(target.classList.contains('prev')){
+            index--;
+            showPic();
+        }else if(target.classList.contains('next')){
+            index++;
+            showPic();
+        }
+
+        // 分页效果
+        if(target.parentNode.classList.contains('page')){
+            index = target.innerText-1;
+            showPic();
+        }
+    }
+
+    // carousel.onclick = (e)=>{
+    //     var target = e.target;
+
+        
+    // }
+
+    // 自动轮播
+    function autoPlay(){
+
+        index++;
+
+        
+        showPic();
+        
+    }
+
+    
+
+    function showPic(){
+        // 防止index超出范围
+        if(index>=len){
+            // 一瞬间移动到初始位置
+            ul.style.left = 0;
+            index = 1;
+        }else if(index<0){
+            index = len-1;
+        }
+
+        // 计算目标值
+        var target = -index * itemWidth;
+
+        animate(ul,{left:target});
+
+        // // 分页高亮
+        for(var i=0;i<len-1;i++){
+            page.children[i].className = '';
+        }
+
+        // 当图片滚动到复制图片时，显示第1分页高亮
+        if(index==len-1){
+            page.children[0].className = 'active'
+        }else{
+            page.children[index].className = 'active';
+        }
+        
+    }
+
+}

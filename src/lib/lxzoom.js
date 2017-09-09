@@ -29,12 +29,13 @@ LxZoom.prototype = {
 		// var smallContainer = document.getElementsByClassName('this.ele')[0];
 		var smallContainer = document.querySelector(this.ele);
 		// smallContainer.style.position = 'relative';
-		console.log(smallContainer);
+		// console.log(smallContainer);
 		var smallImg = smallContainer.children[0];
 
 		// 大图容器
 		var bigContainer = document.createElement('div');
 		bigContainer.className = 'lxzoom-big';
+		bigContainer.style.border = '1px solid #666';
 		// bigContainer.style.position = 'absolute';
 
 		// 定义样式

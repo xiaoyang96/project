@@ -64,9 +64,13 @@
   font-size: 18px;
 }
 
+.container .main .fr .tab ul li.active {
+  border-bottom: 3px solid red;
+  color: red;
+}
+
 .container .main .fr .tab .c1 {
   padding: 20px 40px 0 40px;
-  display: none;
 }
 
 .container .main .fr .tab .c1 div {

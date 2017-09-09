@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .nav .container h4 ul {
   display: block;
 }
@@ -18,11 +19,70 @@
 .ban {
   background: #E0CCB1;
   padding-left: 182px;
+  /*------------轮播图------------*/
 }
 
-.ban .ban_l {
+.ban .carousel {
   width: 784px;
   height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+.ban .carousel ul {
+  width: 3920px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.ban .carousel ul li {
+  float: left;
+}
+
+.ban .carousel ul img {
+  height: 400px;
+  width: 784px;
+}
+
+.ban .carousel > span {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  margin-top: -30px;
+  width: 30px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.ban .carousel > span.next {
+  left: auto;
+  right: 10px;
+}
+
+.ban .carousel .page {
+  position: absolute;
+  right: 50px;
+  bottom: 10px;
+  /*transform:translate(-50%,0);*/
+}
+
+.ban .carousel .page span {
+  display: inline-block;
+  margin: 0 5px;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+}
+
+.ban .carousel .page span.active {
+  background-color: #fc0;
 }
 
 .ban .ban_r {

@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2017-09-01 14:33:09
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-05 19:16:38
+* @Last Modified time: 2017-09-09 16:56:17
 */
 
 require(['config'],function(){
@@ -18,7 +18,10 @@ require(['config'],function(){
             //     var fn = this.className.split(' ')[1];
             //     data04[fn]();
             // });
-
+            
+            Carousel();
+            
+            
             $('.mt1 header span').eq(0).addClass('active');
             $('.mc1 .content').first().nextAll().hide();
             $('.mt1').on('mouseover','header span',function(){
@@ -26,7 +29,7 @@ require(['config'],function(){
                 $(this).addClass('active').siblings('span').removeClass('active');
                 $('.mc1 .content').eq(idx).show().siblings('.content').hide();
             });   
-
+            
             $('.mt2 header span').eq(0).addClass('active');
             $('.mc2 .content').first().nextAll().hide();
             $('.mt2').on('mouseover','header span',function(){

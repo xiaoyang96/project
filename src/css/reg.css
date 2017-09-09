@@ -47,58 +47,7 @@
   line-height: 58px;
   border-bottom: 1px solid #E6E6E6;
   font-size: 20px;
-}
-
-.main .main_l div {
-  margin-left: 120px;
-  border: 1px solid #ccc;
-  height: 52px;
-  line-height: 52px;
-}
-
-.main .main_l div span {
-  padding: 0 20px;
-  color: #666;
-}
-
-.main .main_l div:first-of-type {
-  width: 400px;
-  margin-top: 50px;
-}
-
-.main .main_l div:first-of-type input {
-  border: 0 none;
-  height: 50px;
-}
-
-.main .main_l div:nth-of-type(2) {
-  width: 278px;
-  border-top: 0 none;
-}
-
-.main .main_l div:nth-of-type(2) input {
-  border: 0 none;
-  height: 50px;
-}
-
-.main .main_l div:nth-of-type(3) {
-  border: 0 none;
-}
-
-.main .main_l div:nth-of-type(3) span {
-  padding: 0 10px;
-  font-size: 14px;
-}
-
-.main .main_l button {
-  margin-left: 120px;
-  width: 400px;
-  height: 52px;
-  border: 0 none;
-  border-radius: 5px;
-  background-color: #FF500B;
-  color: #fff;
-  font-weight: bold;
+  margin-bottom: 50px;
 }
 
 .main .main_r {
