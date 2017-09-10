@@ -6,6 +6,10 @@
     <link rel="stylesheet" type="text/css" href="../css/base.css" />
     <link rel="stylesheet" type="text/css" href="../css/reg.css" />
     <link rel="stylesheet" type="text/css" href="../font/font_2tc6l6ui9xdpldi/iconfont.css" />
+    <script type="text/javascript" src="../js/require.js" data-main="../js/reg"></script>
+
+    <script type="text/javascript" src="../js/reg_.js"></script>
+
 </head>
 <body>
     <div class="header clear">
@@ -16,28 +20,37 @@
         <div class="main clear">
             <div class="main_l fl">
                 <p>注册</p>
-                <!-- <div class="username">
-                    <span>用户名：</span>
-                    <input type="text" value="请输入手机号码" />
+                <div class="user">
+                    <div class="username">
+                        <span>用户名：</span>
+                        <input id="username" type="text" placeholder="请使用6-20个中、英文、数字及“-”符号" maxlength="20" minlength="6"/>
+                        <i id="error_1"></i>
+                    </div>
+                    <div class="password">
+                        <span>设置密码：</span>
+                        <input id="password" type="password" placeholder="请输入6-20位的密码" maxlength="20" minlength="6"/>
+                        <i id="error_2"></i>
+
+                    </div>
+                    <div class="password">
+                        <span>确认密码：</span>
+                        <input id="confirm_pwd" type="password" placeholder="请输入相同密码" maxlength="20" minlength="6"/>
+                        <i id="error_3"></i>
+                    </div>
+                    <div class="code">
+                        <span>验证码：</span>
+                        <input id="code" type="text" placeholder="输入验证码" maxlength="4" />
+                        <span class="vcode"></span>
+                        <i id="error_4"></i>
+
+                    </div>
+                    <p class="xieyi">
+                        <input type="checkbox" id="agree" checked/>
+                        <span>阅读并同意<a href="#">《服务协议》</a></span>
+                    </p>
+                    <button id="btn">注册</button>
                 </div>
-                <div class="password">
-                    <span>密&nbsp;码：</span>
-                    <input type="password" value="请输入密码" />
-                </div>
-                <div class="password">
-                    <span>确认密码：</span>
-                    <input type="password" value="请输入密码" />
-                </div>
-                <div class="code">
-                    <span>验证码：</span>
-                    <input type="text" value="输入验证码" />
-                    
-                </div>
-                <div class="xieyi">
-                    <input type="checkbox" />
-                    <span>阅读并同意<a href="#">《服务协议》</a></span>
-                </div>
-                <button>注册</button> -->
+                
             </div>
             <div class="main_r fr">
                 <p>注册之后您可以</p>

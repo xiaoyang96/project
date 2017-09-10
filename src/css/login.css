@@ -71,47 +71,95 @@
 
 .container .main .fr .tab .c1 {
   padding: 20px 40px 0 40px;
+  overflow: visible;
+}
+
+.container .main .fr .tab .c1 #error {
+  display: block;
+  position: absolute;
+  right: 90px;
+  top: 290px;
+  width: 100px;
+  height: 52px;
+  line-height: 52px;
+  font-size: 12px;
+  color: red;
+  z-index: 9999;
+}
+
+.container .main .fr .tab .c1 input {
+  outline: none;
 }
 
 .container .main .fr .tab .c1 div {
-  border: 1px solid #ccc;
-  height: 52px;
-  line-height: 52px;
-  font-size: 14px;
+  overflow: hidden;
 }
 
 .container .main .fr .tab .c1 div span {
-  padding: 0 20px;
+  float: left;
+  display: inline-block;
+  width: 108px;
+  height: 52px;
+  line-height: 52px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-right: 0 none;
+  border-bottom: 0 none;
+  font-size: 14px;
 }
 
 .container .main .fr .tab .c1 div input {
-  border: 0 none;
+  float: left;
+  width: 210px;
+  height: 52px;
+  border: 1px solid #ccc;
+  border-left: 0 none;
+  border-bottom: 0 none;
 }
 
-.container .main .fr .tab .c1 div:nth-of-type(1) {
-  border-bottom: none;
-}
-
-.container .main .fr .tab .c1 div:nth-of-type(3) {
-  width: 220px;
-  border-top: none;
-}
-
-.container .main .fr .tab .c1 div:nth-of-type(3) input {
-  width: 100px;
-}
-
-.container .main .fr .tab .c1 div:nth-of-type(4) {
-  border: none;
-  font-size: 14px;
+.container .main .fr .tab .c1 .code {
   position: relative;
 }
 
-.container .main .fr .tab .c1 div:nth-of-type(4) span {
-  padding: 0;
+.container .main .fr .tab .c1 .code span {
+  border-bottom: 1px solid #ccc;
 }
 
-.container .main .fr .tab .c1 div:nth-of-type(4) a {
+.container .main .fr .tab .c1 .code input {
+  width: 100px;
+  border-bottom: 1px solid #ccc;
+  border-right: 0 none;
+}
+
+.container .main .fr .tab .c1 .code .vcode {
+  display: float;
+  width: 109px;
+  height: 52px;
+  line-height: 52px;
+  border-right: 1px solid #ccc;
+  background: rgba(0, 0, 0, 0.1);
+  color: #000;
+  font-size: 24px;
+}
+
+.container .main .fr .tab .c1 .zddl {
+  height: 52px;
+  line-height: 52px;
+  font-size: 12px;
+  position: relative;
+}
+
+.container .main .fr .tab .c1 .zddl input {
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.container .main .fr .tab .c1 .zddl span {
+  display: inline-block;
+}
+
+.container .main .fr .tab .c1 .zddl .forget {
   position: absolute;
   right: 0;
 }
@@ -126,18 +174,41 @@
   border-radius: 5px;
 }
 
-.container .main .fr .tab .c1 p {
-  font-size: 12px;
-  height: 25px;
-  line-height: 25px;
+.container .main .fr .tab .c1 .lastDiv {
   padding-top: 15px;
-  padding-left: 8px;
+  padding-left: 10px;
+}
+
+.container .main .fr .tab .c1 .lastDiv p {
+  font-size: 12px;
+  height: 32px;
+  line-height: 32px;
+}
+
+.container .main .fr .tab .c1 .lastDiv p:nth-of-type(1) {
+  color: #000;
   font-weight: bold;
 }
 
-.container .main .fr .tab .c1 p:last-of-type {
-  font-weight: normal;
-  padding: 0 0 0 40px;
+.container .main .fr .tab .c1 .lastDiv p:nth-of-type(2) {
+  color: #aaa;
+}
+
+.container .main .fr .tab .c1 .lastDiv p:nth-of-type(2) i {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+}
+
+.container .main .fr .tab .c1 .lastDiv p:nth-of-type(2):hover {
+  color: #4EA335;
+}
+
+.container .main .fr .tab .c1 .lastDiv p:nth-of-type(2):hover i {
+  border: 1px solid #4EA335;
 }
 
 .container .main .fr .tab .c2 {

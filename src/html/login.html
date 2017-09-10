@@ -5,7 +5,9 @@
     <title>登录</title>
     <link rel="stylesheet" type="text/css" href="../css/base.css" />
     <link rel="stylesheet" type="text/css" href="../css/login.css" />
+    <link rel="stylesheet" type="text/css" href="../font/font_2tc6l6ui9xdpldi/iconfont.css" />
     <script type="text/javascript" src="../js/require.js" data-main="../js/login"></script>
+    <script type="text/javascript" src="../js/login_.js"></script>
 </head>
 <body>
     <div class="header clear">
@@ -30,30 +32,37 @@
                         <li>手机动态码登录</li>
                     </ul>
                     <div class="content c1">
-                        <div>
+                        <i id="error"></i>
+                        <div class="username">
                             <span>帐&nbsp;&nbsp;&nbsp;号：</span>
-                            <input type="text" value="手机号/会员号/邮箱" />
+                            <input type="text" placeholder="手机号/会员号/邮箱" id="username" maxlength="20" minlength="6"/>
+                            <i></i>
                         </div>
-                        <div>
+                        <div class="password">
                             <span>密&nbsp;&nbsp;&nbsp;码：</span>
-                            <input type="text" value="输入帐号密码" />
+                            <input id="password" type="password" placeholder="输入账户密码" maxlength="20" minlength="6"/>
+                            <i></i>
                         </div>
-                        <div>
+                        <div class="code">
                             <span>验证码：</span>
-                            <input type="text" value="输入验证码" />
+                            <input id="code" type="text" placeholder="输入验证码" maxlength="4" />
+                            <span class="vcode"></span>
 
                         </div>
-                        <div>
-                            <input type="checkbox" />
+                        <p class="zddl">
+                            <input type="checkbox" id="sevenDay" />
                             <span>七天自动登录</span>
-                            <span><a href="#">忘记密码</a></span>
-                        </div>
-                        <button>登录</button>
-                        <p>使用合作网站帐号登录:</p>
-                        <p>
-                            <i></i>
-                            微信
+                            <span class="forget"><a href="#">忘记密码</a></span>
                         </p>
+                        <button id="btn">登录</button>
+                        <div class="lastDiv">
+                            <p>使用合作网站帐号登录:</p>
+                            <p>
+                                <i class="iconfont icon-yingdaicon04"></i>
+                                微信
+                            </p>
+                        </div>
+                        
                     </div>
                     <div class="content c2">
                         <div>

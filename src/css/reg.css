@@ -31,7 +31,7 @@
 .main {
   border: 10px solid #D1D1D1;
   box-sizing: border-box;
-  background-color: #FAFAFA;
+  background-color: #fff;
   color: #aaa;
 }
 
@@ -39,7 +39,7 @@
   width: 620px;
 }
 
-.main .main_l p {
+.main .main_l > p {
   height: 58px;
   margin: 0 15px;
   padding-left: 108px;
@@ -48,6 +48,97 @@
   border-bottom: 1px solid #E6E6E6;
   font-size: 20px;
   margin-bottom: 50px;
+}
+
+.main .main_l .user {
+  padding-left: 100px;
+}
+
+.main .main_l .user div {
+  overflow: hidden;
+}
+
+.main .main_l .user div input {
+  outline: none;
+}
+
+.main .main_l .user div span {
+  float: left;
+  display: inline-block;
+  width: 108px;
+  height: 52px;
+  line-height: 52px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-right: 0 none;
+  border-bottom: 0 none;
+  font-size: 14px;
+}
+
+.main .main_l .user div input {
+  float: left;
+  width: 272px;
+  height: 52px;
+  border: 1px solid #ccc;
+  border-left: 0 none;
+  border-bottom: 0 none;
+}
+
+.main .main_l .user div i {
+  float: left;
+  height: 52px;
+  width: 120px;
+  line-height: 52px;
+  font-size: 12px;
+  color: red;
+}
+
+.main .main_l .user .code span {
+  border-bottom: 1px solid #ccc;
+}
+
+.main .main_l .user .code input {
+  width: 152px;
+  border-bottom: 1px solid #ccc;
+  border-right: 0 none;
+}
+
+.main .main_l .user .code .vcode {
+  display: float;
+  width: 119px;
+  height: 52px;
+  line-height: 52px;
+  border-right: 1px solid #ccc;
+  background: rgba(0, 0, 0, 0.1);
+  color: #000;
+  font-size: 24px;
+}
+
+.main .main_l .user .xieyi {
+  height: 52px;
+  line-height: 52px;
+  font-size: 14px;
+}
+
+.main .main_l .user .xieyi input {
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.main .main_l .user .xieyi span {
+  display: inline-block;
+}
+
+.main .main_l .user button {
+  border: 0 none;
+  width: 380px;
+  height: 42px;
+  background: #FF500B;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
 }
 
 .main .main_r {

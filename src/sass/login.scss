@@ -24,26 +24,47 @@
                 .c1{
                     padding:20px 40px 0 40px;
                     // display:none;
+                    overflow:visible;
+                    #error{display:block;position:absolute;right:90px;top:290px;width:100px;height
+                        :52px;line-height:52px;font-size:12px;color:red;z-index:9999;}
+                    input{outline:none;}
                     div{
-                        border:1px solid #ccc;height:52px;line-height:52px;font-size:14px;
-                        span{padding:0 20px;}
-                        input{border:0 none;}
+                        overflow:hidden;
+                        span{float:left;display:inline-block;width:108px;height:52px;line-height:52px;text-align:center;border:1px solid #ccc;border-right:0 none;border-bottom:0 none;font-size:14px;}
+                        input{float:left;width:210px;height:52px;border:1px solid #ccc;border-left:0 none;border-bottom:0 none;}   
                     }
-                    div:nth-of-type(1){
-                        border-bottom:none;
+                    .code{
+                        position:relative;
+                        span{border-bottom:1px solid #ccc;}
+                        input{width:100px;border-bottom:1px solid #ccc;border-right:0 none;}
+                        .vcode{display:float;width:109px;height:52px;line-height:52px;border-right:1px solid #ccc;background:rgba(0,0,0,0.1);color:#000;font-size:24px;}
+                        
                     }
-                    div:nth-of-type(3){
-                        width:220px;border-top:none;
-                        input{width:100px;}
-                    }
-                    div:nth-of-type(4){
-                        border:none;font-size:14px;position:relative;
-                        span{padding:0;}
-                        a{position:absolute;right:0;}
+                    .zddl{
+                        height:52px;line-height:52px;font-size:12px;position:relative;
+                        input{margin-right:5px;display:inline-block;vertical-align:middle;}
+                        span{display:inline-block;}
+                        .forget{
+                            position:absolute;right:0;
+                        }
                     }
                     button{width:320px;height:42px;background-color:#FF500B;color:#fff;font-weight:bold;border:0 none;border-radius:5px;}
-                    p{font-size:12px;height:25px;line-height:25px;padding-top:15px;padding-left:8px;font-weight:bold;}
-                    p:last-of-type{font-weight:normal;padding:0 0 0 40px;}
+                    .lastDiv{
+                        padding-top:15px;padding-left:10px; 
+                        p{font-size:12px;height:32px;line-height:32px;}
+                        p:nth-of-type(1){color:#000;font-weight:bold;}
+                        p:nth-of-type(2){
+                            color:#aaa;
+                            i{display:inline-block;width:30px;height:30px;text-align:center;border:1px solid #ccc;border-radius:50%;}
+                        }
+                        p:nth-of-type(2):hover{
+                            color:#4EA335;
+                            i{border:1px solid #4EA335;}
+                        }
+
+                    }
+
+                    
                 }
                 .c2{
                     padding:20px 40px 0 40px;
