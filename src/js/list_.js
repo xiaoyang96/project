@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2017-09-08 17:39:19
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-08 17:39:44
+* @Last Modified time: 2017-09-11 08:59:52
 */
 
 document.addEventListener('DOMContentLoaded',function(){
@@ -77,6 +77,7 @@ document.addEventListener('DOMContentLoaded',function(){
             xhr.send();
         }
     }
+
 
 
     var arr_goods = [];

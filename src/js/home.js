@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2017-09-01 14:33:09
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-09 16:56:17
+* @Last Modified time: 2017-09-11 08:54:29
 */
 
 require(['config'],function(){
@@ -19,6 +19,24 @@ require(['config'],function(){
             //     data04[fn]();
             // });
             
+            $(window).on('scroll',function(){
+                var scrollTop = $(window).scrollTop();
+                if(scrollTop>400){
+                    $('.returnTop').fadeIn();
+                }else{
+                    $('.returnTop').fadeOut();
+                }
+            });
+            $('.returnTop').on('click',function(){
+                $('html,body').animate({'scrollTop':0});
+            });
+
+
+             
+            
+
+
+
             Carousel();
             
             

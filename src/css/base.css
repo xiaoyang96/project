@@ -35,6 +35,14 @@ a {
   zoom: 1;
 }
 
+.returnTop i {
+  font-size: 30px;
+  position: fixed;
+  bottom: 20px;
+  right: 0;
+  background: #ccc;
+}
+
 .header {
   height: 38px;
   width: 100%;

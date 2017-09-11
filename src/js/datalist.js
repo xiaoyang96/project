@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2017-09-05 20:21:18
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-09 17:18:43
+* @Last Modified time: 2017-09-11 08:57:20
 */
 
 
@@ -12,6 +12,18 @@ require(['config'],function(){
             $('.common_header').load('list.html .common_header');
             $('.common_footer').load('list.html .common_footer');
             $('.footer').load('reg.html .footer');
+
+            $(window).on('scroll',function(){
+                var scrollTop = $(window).scrollTop();
+                if(scrollTop>400){
+                    $('.returnTop').fadeIn();
+                }else{
+                    $('.returnTop').fadeOut();
+                }
+            });
+            $('.returnTop').on('click',function(){
+                $('html,body').animate({'scrollTop':0});
+            });
 
             new LxZoom({width: 450,height:350,position:'right'}).init();
 

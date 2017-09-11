@@ -14,6 +14,10 @@ a{text-decoration:none;}
     zoom: 1;
 }
 
+.returnTop{
+    i{font-size:30px;position:fixed;bottom:20px;right:0;background:#ccc;}
+}
+
 .header{
     height:38px;width:100%;border-bottom:1px solid #ccc;font-size:14px;
     .container{
