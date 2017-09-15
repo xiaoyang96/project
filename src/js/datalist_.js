@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2017-09-08 17:37:34
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-10 21:23:36
+* @Last Modified time: 2017-09-12 22:41:38
 */
 
 document.addEventListener('DOMContentLoaded',function(){
@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded',function(){
     // console.log(goods_l);
     var goods_c = document.getElementsByClassName('goods_c')[0];
     var content = document.getElementsByClassName('content')[0];
+    var goods = document.querySelector('.goods')
     var addCar = document.querySelector('.addCar')
 
     var params = location.search.substring(1).split('=');
@@ -94,48 +95,52 @@ document.addEventListener('DOMContentLoaded',function(){
     // }
 
 
-    // 点击添加到购物车
-    // datalist.onclick = function(e){
-    //     e =e || window.event;
-    //     var target = e.target || e.srcElement;
-    //     if(target.tagName.toLowerCase() ==='button'){
-    //         var currentLi = target.parentNode.parentNode;
-    //         var guid = currentLi.getAttribute('data-guid');
+    //点击添加到购物车
+    
+    goods.onclick = function(e){console.log(111)
+        e =e || window.event;
+        var target = e.target || e.srcElement;
 
-    //         // 判断cookie中是否已经存在当前商品
-    //         // arr_goods = [{guid:1,title:xx}，{guid:2,title:xx}，{guid:3,title:xx}]
-    //         for(var i=0;i<arr_goods.length;i++){
-    //             // 存在时，数量加一
-    //             if(arr_goods[i].guid === guid){
-    //                 arr_goods[i].qty++;
-    //                 break;
-    //             }
-    //         }
+        if(target.className.toLowerCase() ==='addcar'){
+            var currentGood = target.parentNode.parentNode.parentNode;
+            var guid = location.search.slice(6);
+            console.log(guid);
+            // var guid = currentGood.getAttribute('data-guid');
 
-    //         // arr_goods中不存在当前商品时
-    //         if(i===arr_goods.length){
-    //             //获取点击按钮对应商品信息
-    //             var goods = {
-    //                 guid:guid,
-    //                 imgurl:currentLi.children[0].children[0].src,
-    //                 title:currentLi.children[2].innerText,
-    //                 price:currentLi.children[1].children[0].innerText,
-    //                 qty:1
-    //             }
-    //             arr_goods.push(goods);
-    //         }
+            // 判断cookie中是否已经存在当前商品
+            // arr_goods = [{guid:1,title:xx}，{guid:2,title:xx}，{guid:3,title:xx}]
+            for(var i=0;i<arr_goods.length;i++){
+                // 存在时，数量加一
+                if(arr_goods[i].guid === guid){
+                    arr_goods[i].qty++;
+                    break;
+                }
+            }
+
+            // arr_goods中不存在当前商品时
+            if(i===arr_goods.length){
+                //获取点击按钮对应商品信息
+                var goods = {
+                    guid:guid,
+                    imgurl:currentGood.children[0].children[0].children[0].src,
+                    title:currentGood.children[1].children[0].innerText,
+                    price:currentGood.children[1].children[3].children[1].innerText,
+                    qty:1
+                }
+                arr_goods.push(goods);
+            }
             
 
-    //         // * JSON.stringify() 把对象/数组转成json字符串
-    //         // * JSON.parse() 把“json字符串”转成对象/数组
+            // * JSON.stringify() 把对象/数组转成json字符串
+            // * JSON.parse() 把“json字符串”转成对象/数组
 
-    //         //存入cookie
-    //         //cookie只能保留字符串（json字符串）
-    //         document.cookie = 'carlist=' + JSON.stringify(arr_goods); 
-    //         console.log(goods);
+            //存入cookie
+            //cookie只能保留字符串（json字符串）
+            document.cookie = 'carlist=' + JSON.stringify(arr_goods); 
+            // console.log(goods);
 
-    //     }
-    // }
+        }
+    }
 
 
 });

@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2017-09-10 16:11:23
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-10 20:35:12
+* @Last Modified time: 2017-09-14 20:34:28
 */
 
 /* 
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded',function(){
                         alert("帐号不存在");
                         return;
                     }else if(res == 'ok'){
-                        alert("登录成功");
+                        location.href = '../index.html';
                     }else{
                         alert("密码不正确");
                         vcode.innerHTML = vCode();

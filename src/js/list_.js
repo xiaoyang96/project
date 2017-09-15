@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2017-09-08 17:39:19
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-11 08:59:52
+* @Last Modified time: 2017-09-12 22:40:05
 */
 
 document.addEventListener('DOMContentLoaded',function(){
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded',function(){
             var ul = document.createElement('ul');
             ul.innerHTML = res.data.map(item=>{
                 return `<li data-guid = "${item.guid}">
-                    <a href="datalist.html?giud=${item.guid}">
+                    <a href="datalist.html?guid=${item.guid}">
                     <img src="/project/src/img/${item.imgurl1}"/></a>
                     <p class="price">￥<span>${item.price}</span></p>
                     <h4 class="title">${item.title}</h4>
